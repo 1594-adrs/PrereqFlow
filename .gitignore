@@ -1,0 +1,29 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.python_packages/
+lib/
+
+# Streamlit cache and runtime data
+.streamlit/
+*.log
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated packaging files
+*.egg-info/
+*.dist-info/
+build/
+dist/
+
+# Local PDF and temporary data files
+ingenieria-sistemas.pdf

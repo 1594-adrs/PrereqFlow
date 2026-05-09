@@ -1,0 +1,1194 @@
+{
+  "courses": [
+    {
+      "code": "SIS001",
+      "name": "Ingenier\u00eda de Sistemas y Computaci\u00f3n",
+      "credits": 2,
+      "semester": 1,
+      "area": "Formaci\u00f3n B\u00e1sica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS002",
+      "name": "Humanidades I",
+      "credits": 1,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS003",
+      "name": "Deportes I",
+      "credits": 5,
+      "semester": 1,
+      "area": "Formaci\u00f3n B\u00e1sica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS004",
+      "name": "Matem\u00e1ticas I",
+      "credits": 5,
+      "semester": 1,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS005",
+      "name": "Programaci\u00f3n I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS006",
+      "name": "T\u00e9cnicas de la comunicaci\u00f3n oral y escrita",
+      "credits": 3,
+      "semester": 1,
+      "area": "Comunicaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS007",
+      "name": "Introducci\u00f3n a la Inform\u00e1tica",
+      "credits": 1,
+      "semester": 1,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS008",
+      "name": "Deportes II",
+      "credits": 5,
+      "semester": 2,
+      "area": "Formaci\u00f3n B\u00e1sica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS009",
+      "name": "Matem\u00e1ticas II",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS010",
+      "name": "\u00c1lgebra Lineal",
+      "credits": 4,
+      "semester": 2,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS011",
+      "name": "F\u00edsica I",
+      "credits": 2,
+      "semester": 2,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS012"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS012",
+      "name": "Laboratorio de F\u00edsica I",
+      "credits": 4,
+      "semester": 2,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS011"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS013",
+      "name": "Programaci\u00f3n II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS014",
+      "name": "Humanidades II",
+      "credits": 4,
+      "semester": 2,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS015",
+      "name": "Matem\u00e1ticas III",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS016",
+      "name": "F\u00edsica II",
+      "credits": 2,
+      "semester": 3,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS017"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS017",
+      "name": "Laboratorio de F\u00edsica II",
+      "credits": 4,
+      "semester": 3,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS016"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS018",
+      "name": "Estructura de Datos",
+      "credits": 3,
+      "semester": 3,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS019",
+      "name": "L\u00f3gica",
+      "credits": 3,
+      "semester": 3,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS020",
+      "name": "Matem\u00e1ticas IV",
+      "credits": 3,
+      "semester": 3,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS021",
+      "name": "M\u00e9todos Num\u00e9ricos",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS022",
+      "name": "F\u00edsica III",
+      "credits": 2,
+      "semester": 4,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS023"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS023",
+      "name": "Laboratorio de F\u00edsica III",
+      "credits": 4,
+      "semester": 4,
+      "area": "F\u00edsica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS022"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS024",
+      "name": "Estructura de lenguajes",
+      "credits": 3,
+      "semester": 4,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS025",
+      "name": "Teor\u00eda de sistemas",
+      "credits": 3,
+      "semester": 4,
+      "area": "Ingenier\u00eda",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS026",
+      "name": "Administraci\u00f3n de empresas",
+      "credits": 2,
+      "semester": 4,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS027",
+      "name": "Estad\u00edstica",
+      "credits": 3,
+      "semester": 4,
+      "area": "Matem\u00e1ticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS028",
+      "name": "Electr\u00f3nica I",
+      "credits": 2,
+      "semester": 4,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS029"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS029",
+      "name": "Laboratorio de Electr\u00f3nica I",
+      "credits": 3,
+      "semester": 5,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS028"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS030",
+      "name": "Programaci\u00f3n orientada a objetos",
+      "credits": 3,
+      "semester": 5,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS031",
+      "name": "Sistemas contables",
+      "credits": 3,
+      "semester": 5,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS032",
+      "name": "Teor\u00eda econ\u00f3mica",
+      "credits": 4,
+      "semester": 5,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS033",
+      "name": "Arquitectura de Computadores",
+      "credits": 4,
+      "semester": 5,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS034",
+      "name": "Electr\u00f3nica II",
+      "credits": 3,
+      "semester": 5,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS045"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS035",
+      "name": "Base de Datos I",
+      "credits": 3,
+      "semester": 5,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS036",
+      "name": "Contabilidad de costos",
+      "credits": 3,
+      "semester": 6,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS037",
+      "name": "Investigaci\u00f3n de Operaciones",
+      "credits": 2,
+      "semester": 6,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS038",
+      "name": "Estad\u00edstica Especial",
+      "credits": 2,
+      "semester": 6,
+      "area": "Estad\u00edstica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS039",
+      "name": "Dibujo",
+      "credits": 4,
+      "semester": 6,
+      "area": "Dise\u00f1o",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS040",
+      "name": "Ingenier\u00eda de Software I",
+      "credits": 3,
+      "semester": 6,
+      "area": "Ingenier\u00eda de Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS041",
+      "name": "Comunicaciones I",
+      "credits": 4,
+      "semester": 6,
+      "area": "Redes y Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS042",
+      "name": "Sistemas Operativos I",
+      "credits": 4,
+      "semester": 6,
+      "area": "Sistemas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS043",
+      "name": "Compiladores",
+      "credits": 3,
+      "semester": 7,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS044",
+      "name": "Finanzas",
+      "credits": 2,
+      "semester": 7,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS045",
+      "name": "Laboratorio de Electr\u00f3nica II",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS034"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS046",
+      "name": "Ingenier\u00eda de Software II",
+      "credits": 3,
+      "semester": 7,
+      "area": "Ingenier\u00eda de Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS052"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS047",
+      "name": "Comunicaciones II",
+      "credits": 2,
+      "semester": 7,
+      "area": "Redes y Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS048",
+      "name": "Sistemas Distribuidos",
+      "credits": 3,
+      "semester": 7,
+      "area": "Sistemas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS049",
+      "name": "Legislaci\u00f3n, \u00e9tica y Contrataci\u00f3n",
+      "credits": 1,
+      "semester": 7,
+      "area": "Derecho y \u00c9tica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS050",
+      "name": "Microcontroladores y Control de procesos en tiempo real",
+      "credits": 3,
+      "semester": 8,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS051"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS051",
+      "name": "Laboratorio de microcontroladores y Control de procesos en tiempo real",
+      "credits": 3,
+      "semester": 8,
+      "area": "Electr\u00f3nica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS050"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS052",
+      "name": "Laboratorio de Software",
+      "credits": 3,
+      "semester": 8,
+      "area": "Ingenier\u00eda de Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "SIS046"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS053",
+      "name": "Nuevas tecnolog\u00edas inform\u00e1ticas",
+      "credits": 4,
+      "semester": 8,
+      "area": "Tecnolog\u00edas",
+      "elective_group": "Tecnolog\u00edas Emergentes",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS054",
+      "name": "Comunicaciones III",
+      "credits": 3,
+      "semester": 8,
+      "area": "Redes y Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS055",
+      "name": "Arquitectura Cliente/Servidor",
+      "credits": 3,
+      "semester": 8,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS056",
+      "name": "Gerencia Institucional",
+      "credits": 2,
+      "semester": 8,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS057",
+      "name": "Sistemas Expertos",
+      "credits": 3,
+      "semester": 9,
+      "area": "Computaci\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS058",
+      "name": "Proyecto de Grado I",
+      "credits": 3,
+      "semester": 9,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": 120,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": [
+        1,
+        2
+      ],
+      "metadata": {}
+    },
+    {
+      "code": "SIS059",
+      "name": "Administraci\u00f3n de Informaci\u00f3n",
+      "credits": 1,
+      "semester": 9,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS060",
+      "name": "Auditor\u00eda de Sistemas",
+      "credits": 2,
+      "semester": 9,
+      "area": "Auditor\u00eda",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS061",
+      "name": "Constituci\u00f3n Pol\u00edtica",
+      "credits": 3,
+      "semester": 9,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS062",
+      "name": "Planeaci\u00f3n estrat\u00e9gica de Sistemas",
+      "credits": 6,
+      "semester": 9,
+      "area": "Gerencia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS063",
+      "name": "Gerencia de proyectos",
+      "credits": 3,
+      "semester": 9,
+      "area": "Gesti\u00f3n",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS064",
+      "name": "Proyecto de Grado II",
+      "credits": 3,
+      "semester": 10,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": 140,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": [
+        1,
+        2
+      ],
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "SIS005",
+      "prereq": "SIS004"
+    },
+    {
+      "course": "SIS005",
+      "prereq": "SIS007"
+    },
+    {
+      "course": "SIS009",
+      "prereq": "SIS004"
+    },
+    {
+      "course": "SIS013",
+      "prereq": "SIS005"
+    },
+    {
+      "course": "SIS015",
+      "prereq": "SIS009"
+    },
+    {
+      "course": "SIS016",
+      "prereq": "SIS011"
+    },
+    {
+      "course": "SIS017",
+      "prereq": "SIS012"
+    },
+    {
+      "course": "SIS018",
+      "prereq": "SIS005"
+    },
+    {
+      "course": "SIS020",
+      "prereq": "SIS015"
+    },
+    {
+      "course": "SIS022",
+      "prereq": "SIS016"
+    },
+    {
+      "course": "SIS023",
+      "prereq": "SIS017"
+    },
+    {
+      "course": "SIS030",
+      "prereq": "SIS013"
+    },
+    {
+      "course": "SIS030",
+      "prereq": "SIS018"
+    },
+    {
+      "course": "SIS031",
+      "prereq": "SIS036"
+    },
+    {
+      "course": "SIS035",
+      "prereq": "SIS013"
+    },
+    {
+      "course": "SIS038",
+      "prereq": "SIS027"
+    },
+    {
+      "course": "SIS040",
+      "prereq": "SIS030"
+    },
+    {
+      "course": "SIS043",
+      "prereq": "SIS019"
+    },
+    {
+      "course": "SIS043",
+      "prereq": "SIS018"
+    },
+    {
+      "course": "SIS044",
+      "prereq": "SIS026"
+    },
+    {
+      "course": "SIS045",
+      "prereq": "SIS034"
+    },
+    {
+      "course": "SIS046",
+      "prereq": "SIS040"
+    },
+    {
+      "course": "SIS048",
+      "prereq": "SIS042"
+    },
+    {
+      "course": "SIS048",
+      "prereq": "SIS033"
+    },
+    {
+      "course": "SIS051",
+      "prereq": "SIS050"
+    },
+    {
+      "course": "SIS052",
+      "prereq": "SIS046"
+    },
+    {
+      "course": "SIS055",
+      "prereq": "SIS035"
+    },
+    {
+      "course": "SIS055",
+      "prereq": "SIS042"
+    },
+    {
+      "course": "SIS058",
+      "prereq": "SIS046"
+    },
+    {
+      "course": "SIS059",
+      "prereq": "SIS035"
+    },
+    {
+      "course": "SIS061",
+      "prereq": "SIS049"
+    },
+    {
+      "course": "SIS063",
+      "prereq": "SIS044"
+    },
+    {
+      "course": "SIS064",
+      "prereq": "SIS063"
+    },
+    {
+      "course": "SIS064",
+      "prereq": "SIS058"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "SIS011",
+      "co_req": "SIS012"
+    },
+    {
+      "course": "SIS012",
+      "co_req": "SIS011"
+    },
+    {
+      "course": "SIS016",
+      "co_req": "SIS017"
+    },
+    {
+      "course": "SIS017",
+      "co_req": "SIS016"
+    },
+    {
+      "course": "SIS022",
+      "co_req": "SIS023"
+    },
+    {
+      "course": "SIS023",
+      "co_req": "SIS022"
+    },
+    {
+      "course": "SIS028",
+      "co_req": "SIS029"
+    },
+    {
+      "course": "SIS029",
+      "co_req": "SIS028"
+    },
+    {
+      "course": "SIS034",
+      "co_req": "SIS045"
+    },
+    {
+      "course": "SIS045",
+      "co_req": "SIS034"
+    },
+    {
+      "course": "SIS046",
+      "co_req": "SIS052"
+    },
+    {
+      "course": "SIS052",
+      "co_req": "SIS046"
+    },
+    {
+      "course": "SIS050",
+      "co_req": "SIS051"
+    },
+    {
+      "course": "SIS051",
+      "co_req": "SIS050"
+    }
+  ]
+}
