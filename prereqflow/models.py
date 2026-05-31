@@ -1,9 +1,38 @@
+"""Modelo de datos del dominio académico.
+
+Define la clase Course como dataclass inmutable que representa una
+asignatura universitaria con todos sus atributos académicos.
+"""
+
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Set
 
 
 @dataclass
 class Course:
+    """Representa una asignatura universitaria dentro del plan de estudios.
+
+    Cada Course encapsula la información académica completa de una materia:
+    código único, nombre, créditos, área, prerrequisitos y corequisitos,
+    semestre sugerido, disponibilidad y metadatos adicionales.
+
+    Attributes:
+        code: Código único de la asignatura (ej. SIS018).
+        name: Nombre completo de la asignatura.
+        credits: Número de créditos académicos. Valor por defecto 3.
+        semester: Semestre sugerido en el plan de estudios.
+        area: Área académica (Matemáticas, Computación, Física, etc.).
+        elective_group: Grupo electivo al que pertenece, si aplica.
+        min_completed_credits: Mínimo de créditos aprobados requeridos.
+        required: True si es obligatoria, False si es electiva.
+        co_requisites: Conjunto de códigos de cursos que deben tomarse
+            simultáneamente.
+        weight: Peso relativo del curso para planificación (1.0 por defecto).
+        difficulty: Nivel de dificultad estimado (1.0 por defecto).
+        semester_offered: Lista de semestres en que se ofrece el curso
+            (None = todos los semestres).
+        metadata: Diccionario para metadatos adicionales extensibles.
+    """
     code: str
     name: str
     credits: int = 3
@@ -19,6 +48,12 @@ class Course:
     metadata: Dict[str, object] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, object]:
+        """Convierte el curso a un diccionario serializable a JSON.
+
+        Returns:
+            Diccionario con todos los atributos del curso. Los conjuntos
+            se convierten a listas ordenadas para serialización.
+        """
         return {
             "code": self.code,
             "name": self.name,
@@ -36,6 +71,19 @@ class Course:
         }
 
     def is_offered_in_semester(self, semester: int) -> bool:
+        """Determina si el curso se ofrece en un semestre específico.
+
+        Si el curso no tiene restricción de oferta (semester_offered es
+        None), se considera disponible en cualquier semestre. Si la
+        oferta está restringida a semestres 1 y/o 2, se normaliza el
+        semestre consultado a 1 (impar) o 2 (par).
+
+        Args:
+            semester: Número de semestre a consultar (1-indexed).
+
+        Returns:
+            True si el curso se ofrece en el semestre indicado.
+        """
         if self.semester_offered is None:
             return True
         offered_semesters = set(self.semester_offered)
@@ -46,6 +94,17 @@ class Course:
 
     @staticmethod
     def from_dict(data: Dict[str, object]) -> "Course":
+        """Crea una instancia de Course desde un diccionario.
+
+        Realiza conversión de tipos y limpieza de espacios en blanco.
+        Los valores ausentes se reemplazan por None o valores por defecto.
+
+        Args:
+            data: Diccionario con los atributos del curso.
+
+        Returns:
+            Nueva instancia de Course construida desde el diccionario.
+        """
         return Course(
             code=str(data.get("code", "")).strip(),
             name=str(data.get("name", "")).strip(),

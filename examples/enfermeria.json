@@ -1,0 +1,684 @@
+{
+  "courses": [
+    {
+      "code": "ENF101",
+      "name": "Introducción a la Enfermería",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF102",
+      "name": "Historia y Filosofía de la Enfermería",
+      "credits": 2,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ANA101",
+      "name": "Anatomía Humana",
+      "credits": 5,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Fisiología Humana",
+      "credits": 5,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO101",
+      "name": "Biología General",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Bioquímica",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF201",
+      "name": "Fundamentos del Cuidado de Enfermería",
+      "credits": 4,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF202",
+      "name": "Laboratorio de Cuidado Básico",
+      "credits": 2,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ENF201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC101",
+      "name": "Microbiología",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FAR101",
+      "name": "Farmacología General",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI101",
+      "name": "Psicología General",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ciencias Sociales",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "NU101",
+      "name": "Nutrición y Dietética",
+      "credits": 2,
+      "semester": 2,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF301",
+      "name": "Enfermería Médico-Quirúrgica I",
+      "credits": 5,
+      "semester": 3,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF302",
+      "name": "Enfermería Médico-Quirúrgica II",
+      "credits": 5,
+      "semester": 4,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF303",
+      "name": "Enfermería Materno-Infantil I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF304",
+      "name": "Enfermería Materno-Infantil II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF305",
+      "name": "Enfermería Pediátrica",
+      "credits": 4,
+      "semester": 4,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF306",
+      "name": "Enfermería Comunitaria I",
+      "credits": 3,
+      "semester": 3,
+      "area": "Comunitaria",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF307",
+      "name": "Enfermería Comunitaria II",
+      "credits": 3,
+      "semester": 4,
+      "area": "Comunitaria",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PAT101",
+      "name": "Patología General",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FAR102",
+      "name": "Farmacología Clínica",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF401",
+      "name": "Enfermería en Salud Mental",
+      "credits": 4,
+      "semester": 5,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF402",
+      "name": "Enfermería en Cuidado Crítico",
+      "credits": 4,
+      "semester": 5,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF403",
+      "name": "Enfermería Geriátrica",
+      "credits": 3,
+      "semester": 5,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF404",
+      "name": "Administración en Enfermería",
+      "credits": 3,
+      "semester": 5,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EPI101",
+      "name": "Epidemiología",
+      "credits": 3,
+      "semester": 4,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SAL101",
+      "name": "Salud Pública",
+      "credits": 3,
+      "semester": 3,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INV101",
+      "name": "Investigación en Enfermería",
+      "credits": 3,
+      "semester": 6,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF501",
+      "name": "Práctica Clínica I",
+      "credits": 8,
+      "semester": 6,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF502",
+      "name": "Práctica Clínica II",
+      "credits": 8,
+      "semester": 7,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF503",
+      "name": "Práctica Clínica III",
+      "credits": 8,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF504",
+      "name": "Trabajo de Grado",
+      "credits": 6,
+      "semester": 8,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ETI101",
+      "name": "Ética Profesional y Bioética",
+      "credits": 2,
+      "semester": 5,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "LEG101",
+      "name": "Legislación en Salud",
+      "credits": 2,
+      "semester": 6,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM101",
+      "name": "Humanidades I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM102",
+      "name": "Humanidades II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF308",
+      "name": "Electiva Clínica I",
+      "credits": 3,
+      "semester": 6,
+      "area": "Electiva",
+      "elective_group": "Electivas Clínicas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ENF309",
+      "name": "Electiva Clínica II",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electiva",
+      "elective_group": "Electivas Clínicas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "ENF201",
+      "prereq": "ENF101"
+    },
+    {
+      "course": "MIC101",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "FAR101",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "PSI101",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "ENF301",
+      "prereq": "ENF201"
+    },
+    {
+      "course": "ENF302",
+      "prereq": "ENF301"
+    },
+    {
+      "course": "ENF303",
+      "prereq": "ENF201"
+    },
+    {
+      "course": "ENF304",
+      "prereq": "ENF303"
+    },
+    {
+      "course": "ENF305",
+      "prereq": "ENF304"
+    },
+    {
+      "course": "ENF308",
+      "prereq": "ENF201"
+    },
+    {
+      "course": "ENF309",
+      "prereq": "ENF308"
+    },
+    {
+      "course": "PAT101",
+      "prereq": "ANA101"
+    },
+    {
+      "course": "FAR102",
+      "prereq": "FAR101"
+    },
+    {
+      "course": "ENF401",
+      "prereq": "ENF302"
+    },
+    {
+      "course": "ENF402",
+      "prereq": "ENF302"
+    },
+    {
+      "course": "ENF403",
+      "prereq": "ENF302"
+    },
+    {
+      "course": "ENF404",
+      "prereq": "ENF201"
+    },
+    {
+      "course": "EPI101",
+      "prereq": "SAL101"
+    },
+    {
+      "course": "INV101",
+      "prereq": "EPI101"
+    },
+    {
+      "course": "ENF501",
+      "prereq": "ENF302"
+    },
+    {
+      "course": "ENF501",
+      "prereq": "ENF305"
+    },
+    {
+      "course": "ENF502",
+      "prereq": "ENF501"
+    },
+    {
+      "course": "ENF503",
+      "prereq": "ENF502"
+    },
+    {
+      "course": "ENF504",
+      "prereq": "INV101"
+    },
+    {
+      "course": "HUM102",
+      "prereq": "HUM101"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "ENF201",
+      "co_req": "ENF202"
+    }
+  ]
+}

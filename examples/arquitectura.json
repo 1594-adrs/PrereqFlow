@@ -1,0 +1,731 @@
+{
+  "courses": [
+    {
+      "code": "ARQ101",
+      "name": "Introducción a la Arquitectura",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ102",
+      "name": "Historia del Arte y la Arquitectura I",
+      "credits": 3,
+      "semester": 1,
+      "area": "Teoría e Historia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ103",
+      "name": "Taller de Diseño Básico I",
+      "credits": 6,
+      "semester": 1,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ104",
+      "name": "Geometría Descriptiva",
+      "credits": 3,
+      "semester": 1,
+      "area": "Representación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ105",
+      "name": "Dibujo Arquitectónico a Mano Alzada",
+      "credits": 3,
+      "semester": 1,
+      "area": "Representación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT101",
+      "name": "Matemáticas Básicas",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ201",
+      "name": "Historia de la Arquitectura II",
+      "credits": 3,
+      "semester": 2,
+      "area": "Teoría e Historia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ202",
+      "name": "Taller de Diseño Básico II",
+      "credits": 6,
+      "semester": 2,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ203",
+      "name": "Sistemas de Representación Gráfica",
+      "credits": 3,
+      "semester": 2,
+      "area": "Representación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ204",
+      "name": "Introducción a los Materiales",
+      "credits": 3,
+      "semester": 2,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ301",
+      "name": "Historia de la Arquitectura III",
+      "credits": 3,
+      "semester": 3,
+      "area": "Teoría e Historia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ302",
+      "name": "Taller de Diseño Arquitectónico I",
+      "credits": 6,
+      "semester": 3,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ303",
+      "name": "Estructuras I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ304",
+      "name": "Topografía y Contexto Urbano",
+      "credits": 3,
+      "semester": 3,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física de las Construcciones",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ401",
+      "name": "Teoría de la Arquitectura",
+      "credits": 3,
+      "semester": 4,
+      "area": "Teoría e Historia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ402",
+      "name": "Taller de Diseño Arquitectónico II",
+      "credits": 6,
+      "semester": 4,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ403",
+      "name": "Estructuras II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ404",
+      "name": "Instalaciones Hidrosanitarias",
+      "credits": 3,
+      "semester": 4,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ501",
+      "name": "Taller de Diseño Urbano",
+      "credits": 6,
+      "semester": 5,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ502",
+      "name": "Estructuras III",
+      "credits": 4,
+      "semester": 5,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ503",
+      "name": "Instalaciones Eléctricas",
+      "credits": 3,
+      "semester": 5,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ504",
+      "name": "Planificación Urbana",
+      "credits": 3,
+      "semester": 5,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ601",
+      "name": "Taller de Diseño Arquitectónico III",
+      "credits": 6,
+      "semester": 6,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ602",
+      "name": "Acondicionamiento Ambiental",
+      "credits": 3,
+      "semester": 6,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ603",
+      "name": "Presupuesto y Programación de Obras",
+      "credits": 3,
+      "semester": 6,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ604",
+      "name": "Legislación Urbana",
+      "credits": 2,
+      "semester": 6,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ701",
+      "name": "Taller de Diseño Arquitectónico IV",
+      "credits": 6,
+      "semester": 7,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ702",
+      "name": "Restauración y Patrimonio",
+      "credits": 3,
+      "semester": 7,
+      "area": "Teoría e Historia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ703",
+      "name": "Gerencia de Proyectos Arquitectónicos",
+      "credits": 3,
+      "semester": 7,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ801",
+      "name": "Taller de Diseño Arquitectónico V",
+      "credits": 6,
+      "semester": 8,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ802",
+      "name": "Sostenibilidad y Bioclimática",
+      "credits": 3,
+      "semester": 8,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ803",
+      "name": "Práctica Profesional",
+      "credits": 4,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ901",
+      "name": "Taller de Grado",
+      "credits": 8,
+      "semester": 9,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ902",
+      "name": "Ética y Responsabilidad Profesional",
+      "credits": 2,
+      "semester": 7,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ305",
+      "name": "Urbanismo I",
+      "credits": 3,
+      "semester": 3,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ405",
+      "name": "Urbanismo II",
+      "credits": 3,
+      "semester": 4,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ505",
+      "name": "Paisajismo",
+      "credits": 3,
+      "semester": 5,
+      "area": "Urbanismo",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SOC101",
+      "name": "Sociología Urbana",
+      "credits": 2,
+      "semester": 4,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ING101",
+      "name": "Modelado Digital 3D",
+      "credits": 3,
+      "semester": 4,
+      "area": "Representación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "ARQ201",
+      "prereq": "ARQ102"
+    },
+    {
+      "course": "ARQ202",
+      "prereq": "ARQ103"
+    },
+    {
+      "course": "ARQ203",
+      "prereq": "ARQ104"
+    },
+    {
+      "course": "ARQ204",
+      "prereq": "ARQ105"
+    },
+    {
+      "course": "ARQ301",
+      "prereq": "ARQ201"
+    },
+    {
+      "course": "ARQ302",
+      "prereq": "ARQ202"
+    },
+    {
+      "course": "ARQ303",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "ARQ304",
+      "prereq": "ARQ104"
+    },
+    {
+      "course": "ARQ401",
+      "prereq": "ARQ301"
+    },
+    {
+      "course": "ARQ402",
+      "prereq": "ARQ302"
+    },
+    {
+      "course": "ARQ403",
+      "prereq": "ARQ303"
+    },
+    {
+      "course": "ARQ404",
+      "prereq": "ARQ204"
+    },
+    {
+      "course": "ARQ501",
+      "prereq": "ARQ402"
+    },
+    {
+      "course": "ARQ501",
+      "prereq": "ARQ405"
+    },
+    {
+      "course": "ARQ502",
+      "prereq": "ARQ403"
+    },
+    {
+      "course": "ARQ503",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "ARQ504",
+      "prereq": "ARQ304"
+    },
+    {
+      "course": "ARQ601",
+      "prereq": "ARQ402"
+    },
+    {
+      "course": "ARQ602",
+      "prereq": "ARQ404"
+    },
+    {
+      "course": "ARQ603",
+      "prereq": "ARQ502"
+    },
+    {
+      "course": "ARQ604",
+      "prereq": "ARQ504"
+    },
+    {
+      "course": "ARQ701",
+      "prereq": "ARQ601"
+    },
+    {
+      "course": "ARQ702",
+      "prereq": "ARQ401"
+    },
+    {
+      "course": "ARQ703",
+      "prereq": "ARQ603"
+    },
+    {
+      "course": "ARQ801",
+      "prereq": "ARQ701"
+    },
+    {
+      "course": "ARQ802",
+      "prereq": "ARQ602"
+    },
+    {
+      "course": "ARQ901",
+      "prereq": "ARQ801"
+    },
+    {
+      "course": "ARQ305",
+      "prereq": "ARQ304"
+    },
+    {
+      "course": "ARQ405",
+      "prereq": "ARQ305"
+    },
+    {
+      "course": "ARQ505",
+      "prereq": "ARQ405"
+    },
+    {
+      "course": "ING101",
+      "prereq": "ARQ203"
+    }
+  ],
+  "co_requisites": []
+}

@@ -1,13 +1,24 @@
+"""Punto de entrada de la aplicación PrereqFlow.
+
+Define la interfaz de usuario con Streamlit, integrando cuatro modos
+de operación (Planificador, Editor, Carga de Archivos y Seguimiento)
+que se cargan dinámicamente desde ``prereqflow/modes/``.
+
+Incluye el currículo de ejemplo de Ingeniería de Sistemas de la UTP
+con 64 asignaturas distribuidas en 10 semestres.
+"""
+
 from pathlib import Path
 
 import streamlit as st
-from streamlit.components.v1 import html
 
 from prereqflow.graph import PrereqGraph
 from prereqflow.io import load_graph_from_json, save_graph_to_json
 from prereqflow.models import Course
-from prereqflow.planner import generate_study_plan
-from prereqflow.visualization import render_graph
+from prereqflow.modes.planner_ui import render_planner_mode
+from prereqflow.modes.editor_ui import render_editor_mode
+from prereqflow.modes.uploader_ui import render_uploader_mode
+from prereqflow.modes.tracker_ui import render_tracker_mode
 
 PROGRAM_NAME = "UTP Ingeniería de Sistemas y Computación"
 DATA_FILE = Path("data/utp_sistemas.json")
@@ -80,40 +91,23 @@ SAMPLE_COURSES = [
 ]
 
 SAMPLE_PREREQUISITES = [
-    ("SIS005", "SIS007"),
-    ("SIS005", "SIS004"),
-    ("SIS013", "SIS005"),
-    ("SIS030", "SIS013"),
-    ("SIS040", "SIS030"),
-    ("SIS046", "SIS040"),
-    ("SIS058", "SIS046"),
-    ("SIS064", "SIS058"),
-    ("SIS009", "SIS004"),
-    ("SIS015", "SIS009"),
-    ("SIS020", "SIS015"),
-    ("SIS016", "SIS011"),
-    ("SIS022", "SIS016"),
-    ("SIS017", "SIS012"),
-    ("SIS023", "SIS017"),
-    ("SIS018", "SIS005"),
-    ("SIS030", "SIS018"),
-    ("SIS043", "SIS018"),
-    ("SIS043", "SIS019"),
-    ("SIS048", "SIS033"),
-    ("SIS048", "SIS042"),
-    ("SIS035", "SIS013"),
-    ("SIS059", "SIS035"),
-    ("SIS061", "SIS049"),
-    ("SIS044", "SIS026"),
-    ("SIS063", "SIS044"),
-    ("SIS031", "SIS036"),
-    ("SIS038", "SIS027"),
-    ("SIS055", "SIS035"),
-    ("SIS045", "SIS034"),
-    ("SIS051", "SIS050"),
-    ("SIS052", "SIS046"),
-    ("SIS055", "SIS042"),
-    ("SIS064", "SIS063"),
+    ("SIS005", "SIS007"), ("SIS005", "SIS004"),
+    ("SIS013", "SIS005"), ("SIS030", "SIS013"),
+    ("SIS040", "SIS030"), ("SIS046", "SIS040"),
+    ("SIS058", "SIS046"), ("SIS064", "SIS058"),
+    ("SIS009", "SIS004"), ("SIS015", "SIS009"),
+    ("SIS020", "SIS015"), ("SIS016", "SIS011"),
+    ("SIS022", "SIS016"), ("SIS017", "SIS012"),
+    ("SIS023", "SIS017"), ("SIS018", "SIS005"),
+    ("SIS030", "SIS018"), ("SIS043", "SIS018"),
+    ("SIS043", "SIS019"), ("SIS048", "SIS033"),
+    ("SIS048", "SIS042"), ("SIS035", "SIS013"),
+    ("SIS059", "SIS035"), ("SIS061", "SIS049"),
+    ("SIS044", "SIS026"), ("SIS063", "SIS044"),
+    ("SIS031", "SIS036"), ("SIS038", "SIS027"),
+    ("SIS055", "SIS035"), ("SIS045", "SIS034"),
+    ("SIS051", "SIS050"), ("SIS052", "SIS046"),
+    ("SIS055", "SIS042"), ("SIS064", "SIS063"),
 ]
 
 SEMESTER_ASSIGNMENTS = {
@@ -130,113 +124,61 @@ SEMESTER_ASSIGNMENTS = {
 }
 
 AREA_ASSIGNMENTS = {
-    "SIS001": "Formación Básica",
-    "SIS002": "Humanidades",
-    "SIS003": "Formación Básica",
-    "SIS004": "Matemáticas",
-    "SIS005": "Computación",
-    "SIS006": "Comunicación",
-    "SIS007": "Computación",
-    "SIS008": "Formación Básica",
-    "SIS009": "Matemáticas",
-    "SIS010": "Matemáticas",
-    "SIS011": "Física",
-    "SIS012": "Física",
-    "SIS013": "Computación",
-    "SIS014": "Humanidades",
-    "SIS015": "Matemáticas",
-    "SIS016": "Física",
-    "SIS017": "Física",
-    "SIS018": "Computación",
-    "SIS019": "Computación",
-    "SIS020": "Matemáticas",
-    "SIS021": "Matemáticas",
-    "SIS022": "Física",
-    "SIS023": "Física",
-    "SIS024": "Computación",
-    "SIS025": "Ingeniería",
-    "SIS026": "Gestión",
-    "SIS027": "Matemáticas",
-    "SIS028": "Electrónica",
-    "SIS029": "Electrónica",
-    "SIS030": "Computación",
-    "SIS031": "Gestión",
-    "SIS032": "Gestión",
-    "SIS033": "Computación",
-    "SIS034": "Electrónica",
-    "SIS035": "Computación",
-    "SIS036": "Gestión",
-    "SIS037": "Gestión",
-    "SIS038": "Estadística",
-    "SIS039": "Diseño",
-    "SIS040": "Ingeniería de Software",
-    "SIS041": "Redes y Comunicaciones",
-    "SIS042": "Sistemas",
-    "SIS043": "Computación",
-    "SIS044": "Gestión",
-    "SIS045": "Electrónica",
-    "SIS046": "Ingeniería de Software",
-    "SIS047": "Redes y Comunicaciones",
-    "SIS048": "Sistemas",
-    "SIS049": "Derecho y Ética",
-    "SIS050": "Electrónica",
-    "SIS051": "Electrónica",
-    "SIS052": "Ingeniería de Software",
-    "SIS053": "Tecnologías",
-    "SIS054": "Redes y Comunicaciones",
-    "SIS055": "Computación",
-    "SIS056": "Gestión",
-    "SIS057": "Computación",
-    "SIS058": "Proyecto",
-    "SIS059": "Gestión",
-    "SIS060": "Auditoría",
-    "SIS061": "Derecho",
-    "SIS062": "Gerencia",
-    "SIS063": "Gestión",
-    "SIS064": "Proyecto",
+    "SIS001": "Formación Básica", "SIS002": "Humanidades",
+    "SIS003": "Formación Básica", "SIS004": "Matemáticas",
+    "SIS005": "Computación", "SIS006": "Comunicación",
+    "SIS007": "Computación", "SIS008": "Formación Básica",
+    "SIS009": "Matemáticas", "SIS010": "Matemáticas",
+    "SIS011": "Física", "SIS012": "Física",
+    "SIS013": "Computación", "SIS014": "Humanidades",
+    "SIS015": "Matemáticas", "SIS016": "Física",
+    "SIS017": "Física", "SIS018": "Computación",
+    "SIS019": "Computación", "SIS020": "Matemáticas",
+    "SIS021": "Matemáticas", "SIS022": "Física",
+    "SIS023": "Física", "SIS024": "Computación",
+    "SIS025": "Ingeniería", "SIS026": "Gestión",
+    "SIS027": "Matemáticas", "SIS028": "Electrónica",
+    "SIS029": "Electrónica", "SIS030": "Computación",
+    "SIS031": "Gestión", "SIS032": "Gestión",
+    "SIS033": "Computación", "SIS034": "Electrónica",
+    "SIS035": "Computación", "SIS036": "Gestión",
+    "SIS037": "Gestión", "SIS038": "Estadística",
+    "SIS039": "Diseño", "SIS040": "Ingeniería de Software",
+    "SIS041": "Redes y Comunicaciones", "SIS042": "Sistemas",
+    "SIS043": "Computación", "SIS044": "Gestión",
+    "SIS045": "Electrónica", "SIS046": "Ingeniería de Software",
+    "SIS047": "Redes y Comunicaciones", "SIS048": "Sistemas",
+    "SIS049": "Derecho y Ética", "SIS050": "Electrónica",
+    "SIS051": "Electrónica", "SIS052": "Ingeniería de Software",
+    "SIS053": "Tecnologías", "SIS054": "Redes y Comunicaciones",
+    "SIS055": "Computación", "SIS056": "Gestión",
+    "SIS057": "Computación", "SIS058": "Proyecto",
+    "SIS059": "Gestión", "SIS060": "Auditoría",
+    "SIS061": "Derecho", "SIS062": "Gerencia",
+    "SIS063": "Gestión", "SIS064": "Proyecto",
 }
 
-COURSE_MIN_CREDITS = {
-    "SIS058": 120,
-    "SIS064": 140,
-}
-
-COURSE_OFFERINGS = {
-    "SIS058": [1, 2],
-    "SIS064": [1, 2],
-}
+COURSE_MIN_CREDITS = {"SIS058": 120, "SIS064": 140}
+COURSE_OFFERINGS = {"SIS058": [1, 2], "SIS064": [1, 2]}
 
 CO_REQUISITES = {
-    "SIS011": {"SIS012"},
-    "SIS012": {"SIS011"},
-    "SIS016": {"SIS017"},
-    "SIS017": {"SIS016"},
-    "SIS022": {"SIS023"},
-    "SIS023": {"SIS022"},
-    "SIS028": {"SIS029"},
-    "SIS029": {"SIS028"},
-    "SIS034": {"SIS045"},
-    "SIS045": {"SIS034"},
-    "SIS050": {"SIS051"},
-    "SIS051": {"SIS050"},
-    "SIS046": {"SIS052"},
-    "SIS052": {"SIS046"},
+    "SIS011": {"SIS012"}, "SIS012": {"SIS011"},
+    "SIS016": {"SIS017"}, "SIS017": {"SIS016"},
+    "SIS022": {"SIS023"}, "SIS023": {"SIS022"},
+    "SIS028": {"SIS029"}, "SIS029": {"SIS028"},
+    "SIS034": {"SIS045"}, "SIS045": {"SIS034"},
+    "SIS050": {"SIS051"}, "SIS051": {"SIS050"},
+    "SIS046": {"SIS052"}, "SIS052": {"SIS046"},
 }
 
-ELECTIVE_GROUPS = {
-    "SIS053": "Tecnologías Emergentes",
-}
-
+ELECTIVE_GROUPS = {"SIS053": "Tecnologías Emergentes"}
 ELECTIVE_COURSES = {"SIS053"}
 
 
-def ensure_data_file() -> None:
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    if not DATA_FILE.exists():
-        save_graph_to_json(build_sample_graph(), str(DATA_FILE))
-
 
 def load_data_graph() -> PrereqGraph:
+    """Carga el grafo desde el archivo JSON o retorna el de ejemplo."""
+    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     if DATA_FILE.exists():
         try:
             return load_graph_from_json(str(DATA_FILE))
@@ -246,6 +188,7 @@ def load_data_graph() -> PrereqGraph:
 
 
 def build_sample_graph() -> PrereqGraph:
+    """Construye el grafo de ejemplo con el currículo UTP."""
     graph = PrereqGraph()
     for course in SAMPLE_COURSES:
         if course.code in SEMESTER_ASSIGNMENTS:
@@ -268,118 +211,36 @@ def build_sample_graph() -> PrereqGraph:
     return graph
 
 
-def show_plan(plan: list[list[Course]]) -> None:
-    for index, semester_courses in enumerate(plan, start=1):
-        st.subheader(f"Semestre {index}")
-        for course in semester_courses:
-            st.markdown(
-                f"**{course.code}**: {course.name} ({course.credits} créditos) — "
-                f"Área: {course.area or 'N/A'} — Semestre sugerido: {course.semester or 'N/A'}"
-            )
-
-
 def main() -> None:
+    """Punto de entrada principal de la aplicación Streamlit."""
     st.set_page_config(page_title=f"PrereqFlow - {PROGRAM_NAME}", layout="wide")
-    st.title("PrereqFlow")
-    st.subheader(PROGRAM_NAME)
-    st.markdown(
-        "Ejemplo de planificador de asignaturas para un programa estilo UTP Ingeniería de Sistemas. "
-        "La app puede cargar los datos desde `data/utp_sistemas.json` o usar el currículo integrado de ejemplo. "
-        "Si el archivo JSON no existe, se genera automáticamente a partir del currículo de ejemplo."
-    )
 
-    ensure_data_file()
-    data_source = st.sidebar.selectbox(
-        "Fuente de datos",
-        ["Datos UTP JSON", "Currículo de ejemplo integrado"],
+    if "graph" not in st.session_state:
+        st.session_state.graph = load_data_graph()
+    if "data_source" not in st.session_state:
+        st.session_state.data_source = "Currículo de ejemplo integrado"
+
+    st.sidebar.title("PrereqFlow")
+    st.sidebar.subheader(PROGRAM_NAME)
+
+    app_mode = st.sidebar.radio(
+        "Modo de la aplicación",
+        ["Planificador", "Editor de cursos", "Cargar archivo", "Seguimiento"],
         index=0,
     )
-    graph = load_data_graph() if data_source == "Datos UTP JSON" else build_sample_graph()
-    st.sidebar.header("Configuración del plan")
-    max_credits = st.sidebar.slider("Créditos máximos por semestre", min_value=9, max_value=24, value=18, step=1)
-    max_semesters = st.sidebar.slider("Máximo semestres", min_value=6, max_value=14, value=12, step=1)
-    plan_type = st.sidebar.selectbox(
-        "Tipo de plan",
-        ["Balanceado", "Rápido", "Bajo riesgo"],
-        index=0,
-    )
-    completed_courses = st.sidebar.multiselect(
-        "Cursos ya cursados",
-        sorted(graph.courses),
-        default=[],
-    )
-    show_dependencies = st.sidebar.checkbox("Mostrar grafo de prerrequisitos", value=True)
-    selected_course = st.sidebar.selectbox(
-        "Seleccionar materia",
-        sorted(graph.courses),
-    )
 
-    if show_dependencies:
-        st.markdown("## Grafo de prerrequisitos")
-        graph_html = render_graph(graph)
-        html(graph_html, height=700)
+    if app_mode == "📂 Cargar archivo":
+        render_uploader_mode()
+        return
 
-    completed_credits = sum(
-        graph.courses[code].credits
-        for code in completed_courses
-        if code in graph.courses
-    )
-    st.sidebar.markdown(f"**Créditos aprobados hasta ahora:** {completed_credits}")
-    eligible_courses = graph.eligible_courses(
-        set(completed_courses), semester=1, completed_credits=completed_credits
-    )
-    st.sidebar.markdown(
-        f"**Cursos actualmente elegibles:** {len(eligible_courses)}"
-    )
-    if eligible_courses:
-        st.sidebar.write(
-            ", ".join(f"{course.code}" for course in eligible_courses[:10])
-            + (" ..." if len(eligible_courses) > 10 else "")
-        )
+    graph = st.session_state.graph
 
-    st.markdown("## Plan de estudio generado")
-    try:
-        plan = generate_study_plan(
-            graph,
-            max_credits=max_credits,
-            max_semesters=max_semesters,
-            plan_type={"Balanceado": "balanced", "Rápido": "fast", "Bajo riesgo": "low_risk"}[plan_type],
-            completed=completed_courses,
-        )
-        show_plan(plan)
-        total_credits = sum(course.credits for semester in plan for course in semester)
-        st.info(f"Plan completo en {len(plan)} semestres con {total_credits} créditos planificados.")
-    except ValueError as exc:
-        st.error(str(exc))
-
-    st.markdown("---")
-    st.markdown("### Información de la materia seleccionada")
-    if selected_course:
-        selected = graph.courses[selected_course]
-        prereqs = graph.get_prerequisites(selected_course)
-        co_reqs = graph.get_co_requisites(selected_course)
-        dependents = graph.get_dependents(selected_course)
-        st.write(f"**Área:** {selected.area or 'N/A'}")
-        st.write(f"**Semestre sugerido:** {selected.semester or 'N/A'}")
-        if selected.semester_offered is not None:
-            st.write(f"**Semestres ofrecidos:** {', '.join(str(s) for s in selected.semester_offered)}")
-        if selected.min_completed_credits is not None:
-            st.write(f"**Requisito de créditos aprobados:** {selected.min_completed_credits}")
-        if selected.elective_group:
-            st.write(f"**Grupo electivo:** {selected.elective_group}")
-        if not selected.required:
-            st.write("**Tipo:** Electiva")
-        st.write(f"**Prerrequisitos:** {', '.join(sorted(prereqs)) or 'Ninguno'}")
-        st.write(f"**Corequisitos:** {', '.join(sorted(co_reqs)) or 'Ninguno'}")
-        st.write(f"**Dependientes:** {', '.join(sorted(dependents)) or 'Ninguno'}")
-
-    st.markdown("---")
-    st.markdown("### Cursos del programa UTP")
-    for course in sorted(graph.courses.values(), key=lambda course: course.code):
-        prereqs = graph.get_prerequisites(course.code)
-        st.write(
-            f"**{course.code}** {course.name} — prereqs: {', '.join(sorted(prereqs)) or 'Ninguno'}"
-        )
+    if app_mode == "Planificador":
+        render_planner_mode(graph, st.session_state.data_source, PROGRAM_NAME)
+    elif app_mode == "Editor de cursos":
+        render_editor_mode(graph, DATA_FILE)
+    elif app_mode == "Seguimiento":
+        render_tracker_mode(graph)
 
 
 if __name__ == "__main__":

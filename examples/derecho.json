@@ -1,0 +1,792 @@
+{
+  "courses": [
+    {
+      "code": "DER101",
+      "name": "Introducción al Derecho",
+      "credits": 4,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER102",
+      "name": "Historia del Derecho",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER103",
+      "name": "Teoría del Estado",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER104",
+      "name": "Sociología Jurídica",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER105",
+      "name": "Metodología del Estudio del Derecho",
+      "credits": 2,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER201",
+      "name": "Derecho Romano",
+      "credits": 3,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER202",
+      "name": "Derecho Constitucional General",
+      "credits": 4,
+      "semester": 2,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER203",
+      "name": "Derecho Penal General",
+      "credits": 4,
+      "semester": 2,
+      "area": "Penal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER204",
+      "name": "Economía Política",
+      "credits": 3,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER301",
+      "name": "Derecho Constitucional Colombiano",
+      "credits": 4,
+      "semester": 3,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER302",
+      "name": "Derecho Penal Especial",
+      "credits": 4,
+      "semester": 3,
+      "area": "Penal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER303",
+      "name": "Teoría General del Proceso",
+      "credits": 4,
+      "semester": 3,
+      "area": "Procesal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER304",
+      "name": "Bienes",
+      "credits": 3,
+      "semester": 3,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER401",
+      "name": "Derecho Procesal Penal",
+      "credits": 4,
+      "semester": 4,
+      "area": "Procesal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER402",
+      "name": "Obligaciones",
+      "credits": 4,
+      "semester": 4,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER403",
+      "name": "Contratos",
+      "credits": 4,
+      "semester": 4,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER404",
+      "name": "Derecho Administrativo General",
+      "credits": 3,
+      "semester": 4,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER501",
+      "name": "Derecho Procesal Civil",
+      "credits": 4,
+      "semester": 5,
+      "area": "Procesal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER502",
+      "name": "Derecho Laboral Individual",
+      "credits": 3,
+      "semester": 5,
+      "area": "Laboral",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER503",
+      "name": "Derecho Administrativo Especial",
+      "credits": 3,
+      "semester": 5,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER504",
+      "name": "Derecho Comercial General",
+      "credits": 3,
+      "semester": 5,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER601",
+      "name": "Derecho Procesal Administrativo",
+      "credits": 3,
+      "semester": 6,
+      "area": "Procesal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER602",
+      "name": "Derecho Laboral Colectivo",
+      "credits": 3,
+      "semester": 6,
+      "area": "Laboral",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER603",
+      "name": "Sociedades Comerciales",
+      "credits": 3,
+      "semester": 6,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER604",
+      "name": "Títulos Valores",
+      "credits": 3,
+      "semester": 6,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER701",
+      "name": "Derecho Internacional Público",
+      "credits": 3,
+      "semester": 7,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER702",
+      "name": "Derecho de Familia",
+      "credits": 3,
+      "semester": 7,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER703",
+      "name": "Sucesiones",
+      "credits": 3,
+      "semester": 7,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER704",
+      "name": "Derecho Minero y Ambiental",
+      "credits": 2,
+      "semester": 7,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER801",
+      "name": "Derecho Internacional Privado",
+      "credits": 3,
+      "semester": 8,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER802",
+      "name": "Derecho Tributario",
+      "credits": 3,
+      "semester": 8,
+      "area": "Público",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER803",
+      "name": "Filosofía del Derecho",
+      "credits": 3,
+      "semester": 8,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER804",
+      "name": "Práctica Forense Civil",
+      "credits": 3,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER901",
+      "name": "Práctica Forense Penal",
+      "credits": 3,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER902",
+      "name": "Práctica Forense Laboral",
+      "credits": 3,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER903",
+      "name": "Práctica Forense Administrativa",
+      "credits": 3,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER904",
+      "name": "Consulta y Asesoría Jurídica",
+      "credits": 4,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER905",
+      "name": "Monografía Jurídica",
+      "credits": 4,
+      "semester": 9,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER906",
+      "name": "Ética Profesional del Abogado",
+      "credits": 2,
+      "semester": 9,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER307",
+      "name": "Hermenéutica Jurídica",
+      "credits": 2,
+      "semester": 3,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER505",
+      "name": "Medicina Legal Forense",
+      "credits": 2,
+      "semester": 5,
+      "area": "Penal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER506",
+      "name": "Criminología",
+      "credits": 3,
+      "semester": 5,
+      "area": "Penal",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER507",
+      "name": "Régimen de la Propiedad Inmueble",
+      "credits": 3,
+      "semester": 5,
+      "area": "Privado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "DER201",
+      "prereq": "DER101"
+    },
+    {
+      "course": "DER202",
+      "prereq": "DER101"
+    },
+    {
+      "course": "DER203",
+      "prereq": "DER101"
+    },
+    {
+      "course": "DER301",
+      "prereq": "DER202"
+    },
+    {
+      "course": "DER302",
+      "prereq": "DER203"
+    },
+    {
+      "course": "DER303",
+      "prereq": "DER201"
+    },
+    {
+      "course": "DER304",
+      "prereq": "DER201"
+    },
+    {
+      "course": "DER401",
+      "prereq": "DER303"
+    },
+    {
+      "course": "DER401",
+      "prereq": "DER302"
+    },
+    {
+      "course": "DER402",
+      "prereq": "DER304"
+    },
+    {
+      "course": "DER403",
+      "prereq": "DER402"
+    },
+    {
+      "course": "DER404",
+      "prereq": "DER202"
+    },
+    {
+      "course": "DER501",
+      "prereq": "DER303"
+    },
+    {
+      "course": "DER502",
+      "prereq": "DER203"
+    },
+    {
+      "course": "DER503",
+      "prereq": "DER404"
+    },
+    {
+      "course": "DER504",
+      "prereq": "DER402"
+    },
+    {
+      "course": "DER601",
+      "prereq": "DER503"
+    },
+    {
+      "course": "DER602",
+      "prereq": "DER502"
+    },
+    {
+      "course": "DER603",
+      "prereq": "DER504"
+    },
+    {
+      "course": "DER604",
+      "prereq": "DER504"
+    },
+    {
+      "course": "DER701",
+      "prereq": "DER301"
+    },
+    {
+      "course": "DER801",
+      "prereq": "DER701"
+    },
+    {
+      "course": "DER702",
+      "prereq": "DER402"
+    },
+    {
+      "course": "DER703",
+      "prereq": "DER402"
+    },
+    {
+      "course": "DER802",
+      "prereq": "DER503"
+    },
+    {
+      "course": "DER803",
+      "prereq": "DER102"
+    },
+    {
+      "course": "DER804",
+      "prereq": "DER501"
+    },
+    {
+      "course": "DER901",
+      "prereq": "DER401"
+    },
+    {
+      "course": "DER902",
+      "prereq": "DER602"
+    },
+    {
+      "course": "DER903",
+      "prereq": "DER601"
+    },
+    {
+      "course": "DER905",
+      "prereq": "DER803"
+    },
+    {
+      "course": "DER307",
+      "prereq": "DER101"
+    },
+    {
+      "course": "DER505",
+      "prereq": "DER203"
+    },
+    {
+      "course": "DER506",
+      "prereq": "DER302"
+    },
+    {
+      "course": "DER507",
+      "prereq": "DER304"
+    }
+  ],
+  "co_requisites": []
+}

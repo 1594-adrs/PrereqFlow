@@ -1,0 +1,808 @@
+{
+  "courses": [
+    {
+      "code": "MAT101",
+      "name": "Cálculo Diferencial",
+      "credits": 4,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Cálculo Integral",
+      "credits": 4,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT201",
+      "name": "Cálculo Vectorial",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT202",
+      "name": "Ecuaciones Diferenciales",
+      "credits": 4,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ALG101",
+      "name": "Álgebra Lineal",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST101",
+      "name": "Probabilidad y Estadística",
+      "credits": 3,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física Mecánica",
+      "credits": 4,
+      "semester": 1,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS102",
+      "name": "Física Eléctrica",
+      "credits": 4,
+      "semester": 2,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS103",
+      "name": "Física de Ondas",
+      "credits": 4,
+      "semester": 3,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Química General I",
+      "credits": 4,
+      "semester": 1,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI102",
+      "name": "Laboratorio de Química General I",
+      "credits": 1,
+      "semester": 1,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI201",
+      "name": "Química General II",
+      "credits": 4,
+      "semester": 2,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI202",
+      "name": "Laboratorio de Química General II",
+      "credits": 1,
+      "semester": 2,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI301",
+      "name": "Química Orgánica I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI302",
+      "name": "Laboratorio de Química Orgánica I",
+      "credits": 1,
+      "semester": 3,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI301"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI303",
+      "name": "Química Orgánica II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI304",
+      "name": "Laboratorio de Química Orgánica II",
+      "credits": 1,
+      "semester": 4,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI303"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI401",
+      "name": "Química Analítica",
+      "credits": 4,
+      "semester": 3,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI402",
+      "name": "Laboratorio de Química Analítica",
+      "credits": 1,
+      "semester": 3,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI401"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI501",
+      "name": "Fisicoquímica I",
+      "credits": 4,
+      "semester": 4,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI502",
+      "name": "Fisicoquímica II",
+      "credits": 4,
+      "semester": 5,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ101",
+      "name": "Introducción a la Ingeniería Química",
+      "credits": 2,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ201",
+      "name": "Balances de Materia y Energía",
+      "credits": 4,
+      "semester": 3,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ301",
+      "name": "Termodinámica del Equilibrio",
+      "credits": 4,
+      "semester": 5,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ302",
+      "name": "Fenómenos de Transporte I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ303",
+      "name": "Fenómenos de Transporte II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ401",
+      "name": "Operaciones Unitarias I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ402",
+      "name": "Operaciones Unitarias II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ403",
+      "name": "Operaciones Unitarias III",
+      "credits": 4,
+      "semester": 7,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ501",
+      "name": "Diseño de Reactores Químicos",
+      "credits": 4,
+      "semester": 6,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ502",
+      "name": "Ingeniería de las Reacciones",
+      "credits": 4,
+      "semester": 7,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ601",
+      "name": "Diseño de Procesos",
+      "credits": 5,
+      "semester": 7,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ602",
+      "name": "Control de Procesos",
+      "credits": 4,
+      "semester": 7,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ701",
+      "name": "Simulación de Procesos",
+      "credits": 3,
+      "semester": 8,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ702",
+      "name": "Ingeniería Ambiental",
+      "credits": 3,
+      "semester": 6,
+      "area": "Ambiental",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ801",
+      "name": "Gerencia de Proyectos de Ingeniería",
+      "credits": 3,
+      "semester": 8,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ802",
+      "name": "Legislación y Seguridad Industrial",
+      "credits": 2,
+      "semester": 8,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ901",
+      "name": "Práctica Profesional",
+      "credits": 6,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ902",
+      "name": "Trabajo de Grado",
+      "credits": 6,
+      "semester": 10,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT301",
+      "name": "Métodos Numéricos",
+      "credits": 3,
+      "semester": 5,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIB101",
+      "name": "Dibujo de Ingeniería",
+      "credits": 2,
+      "semester": 1,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IQ305",
+      "name": "Materiales de Ingeniería",
+      "credits": 3,
+      "semester": 4,
+      "area": "Ing. Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "MAT201",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "MAT202",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "ALG101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "FIS102",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "FIS103",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "QUI201",
+      "prereq": "QUI101"
+    },
+    {
+      "course": "QUI301",
+      "prereq": "QUI201"
+    },
+    {
+      "course": "QUI303",
+      "prereq": "QUI301"
+    },
+    {
+      "course": "QUI401",
+      "prereq": "QUI201"
+    },
+    {
+      "course": "QUI501",
+      "prereq": "QUI301"
+    },
+    {
+      "course": "QUI501",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "QUI502",
+      "prereq": "QUI501"
+    },
+    {
+      "course": "IQ201",
+      "prereq": "QUI201"
+    },
+    {
+      "course": "IQ201",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "IQ301",
+      "prereq": "QUI502"
+    },
+    {
+      "course": "IQ301",
+      "prereq": "MAT202"
+    },
+    {
+      "course": "IQ302",
+      "prereq": "IQ201"
+    },
+    {
+      "course": "IQ302",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "IQ303",
+      "prereq": "IQ302"
+    },
+    {
+      "course": "IQ401",
+      "prereq": "IQ201"
+    },
+    {
+      "course": "IQ402",
+      "prereq": "IQ401"
+    },
+    {
+      "course": "IQ403",
+      "prereq": "IQ402"
+    },
+    {
+      "course": "IQ501",
+      "prereq": "IQ302"
+    },
+    {
+      "course": "IQ501",
+      "prereq": "IQ301"
+    },
+    {
+      "course": "IQ502",
+      "prereq": "IQ501"
+    },
+    {
+      "course": "IQ601",
+      "prereq": "IQ403"
+    },
+    {
+      "course": "IQ601",
+      "prereq": "IQ502"
+    },
+    {
+      "course": "IQ602",
+      "prereq": "IQ303"
+    },
+    {
+      "course": "IQ701",
+      "prereq": "MAT301"
+    },
+    {
+      "course": "IQ701",
+      "prereq": "IQ601"
+    },
+    {
+      "course": "IQ702",
+      "prereq": "IQ303"
+    },
+    {
+      "course": "IQ801",
+      "prereq": "IQ601"
+    },
+    {
+      "course": "MAT301",
+      "prereq": "MAT202"
+    },
+    {
+      "course": "IQ305",
+      "prereq": "QUI301"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "QUI101",
+      "co_req": "QUI102"
+    },
+    {
+      "course": "QUI201",
+      "co_req": "QUI202"
+    },
+    {
+      "course": "QUI301",
+      "co_req": "QUI302"
+    },
+    {
+      "course": "QUI303",
+      "co_req": "QUI304"
+    },
+    {
+      "course": "QUI401",
+      "co_req": "QUI402"
+    }
+  ]
+}

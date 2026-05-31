@@ -1,0 +1,850 @@
+{
+  "courses": [
+    {
+      "code": "ANA101",
+      "name": "Anatomía Humana I",
+      "credits": 6,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ANA102",
+      "name": "Anatomía Humana II",
+      "credits": 6,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HIS101",
+      "name": "Histología",
+      "credits": 4,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EMB101",
+      "name": "Embriología",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO101",
+      "name": "Biología Celular y Molecular",
+      "credits": 5,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Bioquímica I",
+      "credits": 5,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI102",
+      "name": "Bioquímica II",
+      "credits": 4,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Fisiología I",
+      "credits": 5,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS102",
+      "name": "Fisiología II",
+      "credits": 5,
+      "semester": 3,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FAR101",
+      "name": "Farmacología I",
+      "credits": 4,
+      "semester": 4,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FAR102",
+      "name": "Farmacología II",
+      "credits": 4,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PAT101",
+      "name": "Patología General",
+      "credits": 5,
+      "semester": 3,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PAT102",
+      "name": "Patología Sistémica",
+      "credits": 5,
+      "semester": 4,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC101",
+      "name": "Microbiología",
+      "credits": 4,
+      "semester": 2,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PAR101",
+      "name": "Parasitología",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INM101",
+      "name": "Inmunología",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SEM101",
+      "name": "Semiología I",
+      "credits": 5,
+      "semester": 4,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SEM102",
+      "name": "Semiología II",
+      "credits": 5,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MED101",
+      "name": "Medicina Interna I",
+      "credits": 6,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MED102",
+      "name": "Medicina Interna II",
+      "credits": 6,
+      "semester": 6,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIR101",
+      "name": "Cirugía General I",
+      "credits": 6,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIR102",
+      "name": "Cirugía General II",
+      "credits": 6,
+      "semester": 6,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PED101",
+      "name": "Pediatría",
+      "credits": 5,
+      "semester": 6,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "GIN101",
+      "name": "Ginecología y Obstetricia",
+      "credits": 5,
+      "semester": 6,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI101",
+      "name": "Psiquiatría",
+      "credits": 4,
+      "semester": 7,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER101",
+      "name": "Dermatología",
+      "credits": 3,
+      "semester": 7,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "OFT101",
+      "name": "Oftalmología",
+      "credits": 3,
+      "semester": 7,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "OTO101",
+      "name": "Otorrinolaringología",
+      "credits": 3,
+      "semester": 7,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "TRA101",
+      "name": "Traumatología",
+      "credits": 4,
+      "semester": 7,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ANE101",
+      "name": "Anestesiología",
+      "credits": 3,
+      "semester": 8,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "IMG101",
+      "name": "Imagenología",
+      "credits": 3,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MED103",
+      "name": "Medicina de Urgencias",
+      "credits": 4,
+      "semester": 8,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MED201",
+      "name": "Medicina Preventiva",
+      "credits": 3,
+      "semester": 4,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SAL101",
+      "name": "Salud Pública I",
+      "credits": 3,
+      "semester": 3,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SAL102",
+      "name": "Salud Pública II",
+      "credits": 3,
+      "semester": 4,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EPI101",
+      "name": "Epidemiología",
+      "credits": 3,
+      "semester": 4,
+      "area": "Salud Pública",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO201",
+      "name": "Bioética",
+      "credits": 2,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INV101",
+      "name": "Metodología de la Investigación",
+      "credits": 3,
+      "semester": 5,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ROT101",
+      "name": "Internado Rotatorio I",
+      "credits": 10,
+      "semester": 9,
+      "area": "Internado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ROT102",
+      "name": "Internado Rotatorio II",
+      "credits": 10,
+      "semester": 10,
+      "area": "Internado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ROT103",
+      "name": "Internado Rotatorio III",
+      "credits": 10,
+      "semester": 11,
+      "area": "Internado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ROT104",
+      "name": "Internado Rotatorio IV",
+      "credits": 10,
+      "semester": 12,
+      "area": "Internado",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MED301",
+      "name": "Medicina Legal",
+      "credits": 2,
+      "semester": 8,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "NU101",
+      "name": "Nutrición Clínica",
+      "credits": 2,
+      "semester": 5,
+      "area": "Ciencias Clínicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI201",
+      "name": "Psicología Médica",
+      "credits": 2,
+      "semester": 3,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "ANA102",
+      "prereq": "ANA101"
+    },
+    {
+      "course": "QUI102",
+      "prereq": "QUI101"
+    },
+    {
+      "course": "FIS101",
+      "prereq": "QUI102"
+    },
+    {
+      "course": "FIS101",
+      "prereq": "ANA102"
+    },
+    {
+      "course": "FIS102",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "PAT101",
+      "prereq": "HIS101"
+    },
+    {
+      "course": "PAT101",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "PAT102",
+      "prereq": "PAT101"
+    },
+    {
+      "course": "FAR101",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "FAR102",
+      "prereq": "FAR101"
+    },
+    {
+      "course": "PAR101",
+      "prereq": "MIC101"
+    },
+    {
+      "course": "INM101",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "SEM101",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "SEM101",
+      "prereq": "PAT102"
+    },
+    {
+      "course": "SEM102",
+      "prereq": "SEM101"
+    },
+    {
+      "course": "MED101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "MED102",
+      "prereq": "MED101"
+    },
+    {
+      "course": "CIR101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "CIR102",
+      "prereq": "CIR101"
+    },
+    {
+      "course": "PED101",
+      "prereq": "MED101"
+    },
+    {
+      "course": "GIN101",
+      "prereq": "MED101"
+    },
+    {
+      "course": "TRA101",
+      "prereq": "CIR101"
+    },
+    {
+      "course": "ANE101",
+      "prereq": "CIR102"
+    },
+    {
+      "course": "MED103",
+      "prereq": "MED102"
+    },
+    {
+      "course": "MED201",
+      "prereq": "SAL101"
+    },
+    {
+      "course": "SAL102",
+      "prereq": "SAL101"
+    },
+    {
+      "course": "EPI101",
+      "prereq": "SAL101"
+    },
+    {
+      "course": "IMG101",
+      "prereq": "SEM101"
+    },
+    {
+      "course": "ROT101",
+      "prereq": "MED102"
+    },
+    {
+      "course": "ROT101",
+      "prereq": "CIR102"
+    },
+    {
+      "course": "ROT102",
+      "prereq": "ROT101"
+    },
+    {
+      "course": "ROT103",
+      "prereq": "ROT102"
+    },
+    {
+      "course": "ROT104",
+      "prereq": "ROT103"
+    },
+    {
+      "course": "PSI101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "DER101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "OFT101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "OTO101",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "MED301",
+      "prereq": "SEM102"
+    },
+    {
+      "course": "NU101",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "PSI201",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "INV101",
+      "prereq": "EPI101"
+    },
+    {
+      "course": "SAL101",
+      "prereq": "MIC101"
+    }
+  ],
+  "co_requisites": []
+}

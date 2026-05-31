@@ -1,0 +1,804 @@
+{
+  "courses": [
+    {
+      "code": "MAT101",
+      "name": "Cálculo Diferencial",
+      "credits": 4,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Cálculo Integral",
+      "credits": 4,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT201",
+      "name": "Cálculo Vectorial",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT202",
+      "name": "Ecuaciones Diferenciales",
+      "credits": 4,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ALG101",
+      "name": "Álgebra Lineal",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física Mecánica",
+      "credits": 4,
+      "semester": 1,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS102",
+      "name": "Física Eléctrica",
+      "credits": 4,
+      "semester": 2,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS103",
+      "name": "Física de Ondas",
+      "credits": 4,
+      "semester": 3,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Química General",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIB101",
+      "name": "Dibujo de Ingeniería",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIB102",
+      "name": "Dibujo Asistido por Computador",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST101",
+      "name": "Estática",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST102",
+      "name": "Dinámica",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT203",
+      "name": "Mecánica de Sólidos",
+      "credits": 4,
+      "semester": 3,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT301",
+      "name": "Mecánica de Fluidos",
+      "credits": 4,
+      "semester": 4,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "GEO101",
+      "name": "Geología para Ingenieros",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "TOP101",
+      "name": "Topografía",
+      "credits": 4,
+      "semester": 3,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT401",
+      "name": "Resistencia de Materiales",
+      "credits": 4,
+      "semester": 4,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT402",
+      "name": "Análisis Estructural I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT501",
+      "name": "Análisis Estructural II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HID101",
+      "name": "Hidráulica",
+      "credits": 4,
+      "semester": 5,
+      "area": "Hidráulica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HID102",
+      "name": "Hidrología",
+      "credits": 3,
+      "semester": 5,
+      "area": "Hidráulica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SUE101",
+      "name": "Mecánica de Suelos",
+      "credits": 4,
+      "semester": 5,
+      "area": "Geotecnia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SUE102",
+      "name": "Cimentaciones",
+      "credits": 4,
+      "semester": 6,
+      "area": "Geotecnia",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT601",
+      "name": "Diseño de Estructuras de Concreto",
+      "credits": 4,
+      "semester": 6,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT602",
+      "name": "Diseño de Estructuras Metálicas",
+      "credits": 4,
+      "semester": 7,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT701",
+      "name": "Puentes",
+      "credits": 3,
+      "semester": 8,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV101",
+      "name": "Materiales de Construcción",
+      "credits": 3,
+      "semester": 4,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV201",
+      "name": "Construcción Pesada",
+      "credits": 3,
+      "semester": 6,
+      "area": "Construcción",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV301",
+      "name": "Gestión de la Construcción",
+      "credits": 3,
+      "semester": 7,
+      "area": "Construcción",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV401",
+      "name": "Vías y Transporte",
+      "credits": 4,
+      "semester": 6,
+      "area": "Transporte",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV402",
+      "name": "Diseño de Pavimentos",
+      "credits": 3,
+      "semester": 7,
+      "area": "Transporte",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV501",
+      "name": "Ingeniería de Tránsito",
+      "credits": 3,
+      "semester": 7,
+      "area": "Transporte",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV502",
+      "name": "Acueductos y Alcantarillados",
+      "credits": 4,
+      "semester": 7,
+      "area": "Hidráulica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV503",
+      "name": "Obras Hidráulicas",
+      "credits": 3,
+      "semester": 8,
+      "area": "Hidráulica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV601",
+      "name": "Ingeniería Sísmica",
+      "credits": 3,
+      "semester": 8,
+      "area": "Estructural",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV701",
+      "name": "Evaluación de Proyectos",
+      "credits": 3,
+      "semester": 8,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV801",
+      "name": "Práctica Profesional",
+      "credits": 6,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CIV901",
+      "name": "Proyecto de Grado",
+      "credits": 6,
+      "semester": 10,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST103",
+      "name": "Estadística",
+      "credits": 3,
+      "semester": 3,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ADM101",
+      "name": "Administración de Obras",
+      "credits": 2,
+      "semester": 8,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "AMB101",
+      "name": "Ingeniería Ambiental",
+      "credits": 2,
+      "semester": 5,
+      "area": "Ambiental",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "LEG101",
+      "name": "Legislación en Construcción",
+      "credits": 2,
+      "semester": 7,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "MAT201",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "MAT202",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "ALG101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "FIS102",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "FIS103",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "DIB102",
+      "prereq": "DIB101"
+    },
+    {
+      "course": "EST101",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "EST101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "EST102",
+      "prereq": "EST101"
+    },
+    {
+      "course": "MAT203",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "MAT301",
+      "prereq": "MAT202"
+    },
+    {
+      "course": "MAT301",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "GEO101",
+      "prereq": "QUI101"
+    },
+    {
+      "course": "TOP101",
+      "prereq": "DIB102"
+    },
+    {
+      "course": "MAT401",
+      "prereq": "MAT203"
+    },
+    {
+      "course": "MAT402",
+      "prereq": "MAT401"
+    },
+    {
+      "course": "MAT501",
+      "prereq": "MAT402"
+    },
+    {
+      "course": "HID101",
+      "prereq": "MAT301"
+    },
+    {
+      "course": "HID102",
+      "prereq": "EST103"
+    },
+    {
+      "course": "SUE101",
+      "prereq": "GEO101"
+    },
+    {
+      "course": "SUE102",
+      "prereq": "SUE101"
+    },
+    {
+      "course": "MAT601",
+      "prereq": "MAT402"
+    },
+    {
+      "course": "MAT602",
+      "prereq": "MAT501"
+    },
+    {
+      "course": "MAT701",
+      "prereq": "MAT601"
+    },
+    {
+      "course": "CIV101",
+      "prereq": "QUI101"
+    },
+    {
+      "course": "CIV201",
+      "prereq": "CIV101"
+    },
+    {
+      "course": "CIV301",
+      "prereq": "CIV201"
+    },
+    {
+      "course": "CIV401",
+      "prereq": "TOP101"
+    },
+    {
+      "course": "CIV402",
+      "prereq": "CIV401"
+    },
+    {
+      "course": "CIV501",
+      "prereq": "CIV401"
+    },
+    {
+      "course": "CIV502",
+      "prereq": "HID101"
+    },
+    {
+      "course": "CIV503",
+      "prereq": "CIV502"
+    },
+    {
+      "course": "CIV601",
+      "prereq": "MAT602"
+    },
+    {
+      "course": "CIV701",
+      "prereq": "CIV301"
+    },
+    {
+      "course": "CIV901",
+      "prereq": "CIV801"
+    },
+    {
+      "course": "EST103",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "AMB101",
+      "prereq": "QUI101"
+    }
+  ],
+  "co_requisites": []
+}

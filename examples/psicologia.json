@@ -1,0 +1,743 @@
+{
+  "courses": [
+    {
+      "code": "PSI101",
+      "name": "Introducción a la Psicología",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI102",
+      "name": "Historia de la Psicología",
+      "credits": 3,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO101",
+      "name": "Biología del Comportamiento",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SOC101",
+      "name": "Sociología General",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Sociales",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT101",
+      "name": "Estadística Descriptiva",
+      "credits": 3,
+      "semester": 1,
+      "area": "Metodología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM101",
+      "name": "Competencias Comunicativas",
+      "credits": 2,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI201",
+      "name": "Psicología del Desarrollo I",
+      "credits": 3,
+      "semester": 2,
+      "area": "Ciclo Vital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI202",
+      "name": "Psicología del Desarrollo II",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ciclo Vital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI203",
+      "name": "Neuropsicología",
+      "credits": 4,
+      "semester": 2,
+      "area": "Biológica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI204",
+      "name": "Teorías de la Personalidad",
+      "credits": 3,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI205",
+      "name": "Psicología Cognitiva",
+      "credits": 3,
+      "semester": 2,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Estadística Inferencial",
+      "credits": 3,
+      "semester": 2,
+      "area": "Metodología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI301",
+      "name": "Psicología del Aprendizaje",
+      "credits": 3,
+      "semester": 3,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI302",
+      "name": "Psicología Social",
+      "credits": 3,
+      "semester": 3,
+      "area": "Social",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI303",
+      "name": " Psicología Educativa",
+      "credits": 3,
+      "semester": 3,
+      "area": "Aplicada",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MET101",
+      "name": "Métodos de Investigación I",
+      "credits": 3,
+      "semester": 3,
+      "area": "Metodología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI401",
+      "name": "Psicología Clínica",
+      "credits": 4,
+      "semester": 4,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI402",
+      "name": "Psicología Organizacional",
+      "credits": 3,
+      "semester": 4,
+      "area": "Organizacional",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI403",
+      "name": "Psicometría",
+      "credits": 4,
+      "semester": 4,
+      "area": "Metodología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MET102",
+      "name": "Métodos de Investigación II",
+      "credits": 3,
+      "semester": 4,
+      "area": "Metodología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI501",
+      "name": "Evaluación Psicológica I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI502",
+      "name": "Psicopatología",
+      "credits": 4,
+      "semester": 5,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI503",
+      "name": "Selección y Evaluación de Personal",
+      "credits": 3,
+      "semester": 5,
+      "area": "Organizacional",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI504",
+      "name": "Psicología de la Salud",
+      "credits": 3,
+      "semester": 5,
+      "area": "Salud",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI601",
+      "name": "Evaluación Psicológica II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI602",
+      "name": "Modelos de Intervención Psicológica",
+      "credits": 4,
+      "semester": 6,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI603",
+      "name": "Capacitación y Desarrollo",
+      "credits": 3,
+      "semester": 6,
+      "area": "Organizacional",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI604",
+      "name": "Psicología Comunitaria",
+      "credits": 3,
+      "semester": 6,
+      "area": "Social",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI701",
+      "name": "Terapia Cognitivo-Conductual",
+      "credits": 4,
+      "semester": 7,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI702",
+      "name": "Psicología de la Familia",
+      "credits": 3,
+      "semester": 7,
+      "area": "Clínica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI703",
+      "name": "Salud Ocupacional",
+      "credits": 3,
+      "semester": 7,
+      "area": "Organizacional",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ETI101",
+      "name": "Ética Profesional del Psicólogo",
+      "credits": 2,
+      "semester": 5,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI704",
+      "name": "Práctica Profesional I",
+      "credits": 6,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI705",
+      "name": "Práctica Profesional II",
+      "credits": 6,
+      "semester": 9,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI801",
+      "name": "Trabajo de Grado",
+      "credits": 6,
+      "semester": 9,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI306",
+      "name": "Psicología Diferencial",
+      "credits": 2,
+      "semester": 3,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI404",
+      "name": "Psicofarmacología",
+      "credits": 3,
+      "semester": 4,
+      "area": "Biológica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI505",
+      "name": "Neuropsicología Clínica",
+      "credits": 3,
+      "semester": 5,
+      "area": "Biológica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI605",
+      "name": "Psicología Jurídica",
+      "credits": 3,
+      "semester": 6,
+      "area": "Aplicada",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PSI706",
+      "name": "Psicología del Consumidor",
+      "credits": 3,
+      "semester": 7,
+      "area": "Organizacional",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "PSI201",
+      "prereq": "PSI101"
+    },
+    {
+      "course": "PSI202",
+      "prereq": "PSI201"
+    },
+    {
+      "course": "PSI203",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "PSI204",
+      "prereq": "PSI101"
+    },
+    {
+      "course": "PSI205",
+      "prereq": "PSI101"
+    },
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "PSI301",
+      "prereq": "PSI205"
+    },
+    {
+      "course": "PSI302",
+      "prereq": "SOC101"
+    },
+    {
+      "course": "PSI303",
+      "prereq": "PSI201"
+    },
+    {
+      "course": "MET101",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "PSI401",
+      "prereq": "PSI204"
+    },
+    {
+      "course": "PSI402",
+      "prereq": "PSI302"
+    },
+    {
+      "course": "PSI403",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "MET102",
+      "prereq": "MET101"
+    },
+    {
+      "course": "PSI501",
+      "prereq": "PSI403"
+    },
+    {
+      "course": "PSI502",
+      "prereq": "PSI401"
+    },
+    {
+      "course": "PSI503",
+      "prereq": "PSI402"
+    },
+    {
+      "course": "PSI504",
+      "prereq": "PSI301"
+    },
+    {
+      "course": "PSI601",
+      "prereq": "PSI501"
+    },
+    {
+      "course": "PSI602",
+      "prereq": "PSI502"
+    },
+    {
+      "course": "PSI603",
+      "prereq": "PSI503"
+    },
+    {
+      "course": "PSI604",
+      "prereq": "PSI302"
+    },
+    {
+      "course": "PSI701",
+      "prereq": "PSI602"
+    },
+    {
+      "course": "PSI702",
+      "prereq": "PSI601"
+    },
+    {
+      "course": "PSI703",
+      "prereq": "PSI402"
+    },
+    {
+      "course": "PSI704",
+      "prereq": "PSI602"
+    },
+    {
+      "course": "PSI704",
+      "prereq": "PSI603"
+    },
+    {
+      "course": "PSI705",
+      "prereq": "PSI704"
+    },
+    {
+      "course": "PSI801",
+      "prereq": "MET102"
+    },
+    {
+      "course": "PSI404",
+      "prereq": "PSI203"
+    },
+    {
+      "course": "PSI505",
+      "prereq": "PSI404"
+    },
+    {
+      "course": "PSI605",
+      "prereq": "PSI302"
+    },
+    {
+      "course": "PSI706",
+      "prereq": "PSI503"
+    },
+    {
+      "course": "ETI101",
+      "prereq": "PSI401"
+    }
+  ],
+  "co_requisites": []
+}

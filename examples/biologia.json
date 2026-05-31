@@ -1,0 +1,734 @@
+{
+  "courses": [
+    {
+      "code": "BIO101",
+      "name": "Biología General",
+      "credits": 4,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO102",
+      "name": "Laboratorio de Biología General",
+      "credits": 2,
+      "semester": 1,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "BIO101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Química General",
+      "credits": 4,
+      "semester": 1,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI102",
+      "name": "Laboratorio de Química General",
+      "credits": 2,
+      "semester": 1,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT101",
+      "name": "Matemáticas I",
+      "credits": 3,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física General",
+      "credits": 4,
+      "semester": 1,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO201",
+      "name": "Botánica General",
+      "credits": 4,
+      "semester": 2,
+      "area": "Botánica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO202",
+      "name": "Zoología General",
+      "credits": 4,
+      "semester": 2,
+      "area": "Zoología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI201",
+      "name": "Química Orgánica",
+      "credits": 4,
+      "semester": 2,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI202",
+      "name": "Laboratorio de Química Orgánica",
+      "credits": 2,
+      "semester": 2,
+      "area": "Química",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "QUI201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Matemáticas II",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST101",
+      "name": "Estadística",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO301",
+      "name": "Biología Celular",
+      "credits": 4,
+      "semester": 3,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO302",
+      "name": "Bioquímica",
+      "credits": 4,
+      "semester": 3,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO303",
+      "name": "Genética General",
+      "credits": 4,
+      "semester": 3,
+      "area": "Genética",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO304",
+      "name": "Ecología General",
+      "credits": 3,
+      "semester": 3,
+      "area": "Ecología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO401",
+      "name": "Biología Molecular",
+      "credits": 4,
+      "semester": 4,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO402",
+      "name": "Genética de Poblaciones",
+      "credits": 3,
+      "semester": 4,
+      "area": "Genética",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO403",
+      "name": "Fisiología Vegetal",
+      "credits": 4,
+      "semester": 4,
+      "area": "Botánica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO404",
+      "name": "Fisiología Animal",
+      "credits": 4,
+      "semester": 4,
+      "area": "Zoología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO405",
+      "name": "Microbiología",
+      "credits": 4,
+      "semester": 4,
+      "area": "Microbiología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO501",
+      "name": "Biología del Desarrollo",
+      "credits": 4,
+      "semester": 5,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO502",
+      "name": "Evolución",
+      "credits": 3,
+      "semester": 5,
+      "area": "Genética",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO503",
+      "name": "Inmunología",
+      "credits": 3,
+      "semester": 5,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO504",
+      "name": "Biogeografía",
+      "credits": 3,
+      "semester": 5,
+      "area": "Ecología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO505",
+      "name": "Biotecnología",
+      "credits": 4,
+      "semester": 6,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO506",
+      "name": "Ecología de Ecosistemas",
+      "credits": 3,
+      "semester": 6,
+      "area": "Ecología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO507",
+      "name": "Biología de la Conservación",
+      "credits": 3,
+      "semester": 6,
+      "area": "Ecología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO508",
+      "name": "Bioinformática",
+      "credits": 3,
+      "semester": 6,
+      "area": "Biología Molecular",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO601",
+      "name": "Biología Marina (electiva)",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electiva",
+      "elective_group": "Electivas Biológicas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO602",
+      "name": "Entomología (electiva)",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electiva",
+      "elective_group": "Electivas Biológicas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO603",
+      "name": "Micología (electiva)",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electiva",
+      "elective_group": "Electivas Biológicas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO701",
+      "name": "Práctica de Campo I",
+      "credits": 6,
+      "semester": 7,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO702",
+      "name": "Práctica de Campo II",
+      "credits": 6,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO801",
+      "name": "Trabajo de Grado",
+      "credits": 8,
+      "semester": 9,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM101",
+      "name": "Humanidades I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM102",
+      "name": "Humanidades II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ETI101",
+      "name": "Bioética",
+      "credits": 2,
+      "semester": 5,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO305",
+      "name": "Paleontología",
+      "credits": 3,
+      "semester": 3,
+      "area": "Fundamentos",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BIO406",
+      "name": "Limnología",
+      "credits": 3,
+      "semester": 5,
+      "area": "Ecología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "BIO201",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "BIO202",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "QUI201",
+      "prereq": "QUI101"
+    },
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "BIO301",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "BIO302",
+      "prereq": "QUI201"
+    },
+    {
+      "course": "BIO303",
+      "prereq": "BIO301"
+    },
+    {
+      "course": "BIO304",
+      "prereq": "BIO101"
+    },
+    {
+      "course": "BIO401",
+      "prereq": "BIO301"
+    },
+    {
+      "course": "BIO402",
+      "prereq": "BIO303"
+    },
+    {
+      "course": "BIO403",
+      "prereq": "BIO201"
+    },
+    {
+      "course": "BIO404",
+      "prereq": "BIO202"
+    },
+    {
+      "course": "BIO405",
+      "prereq": "BIO301"
+    },
+    {
+      "course": "BIO501",
+      "prereq": "BIO401"
+    },
+    {
+      "course": "BIO502",
+      "prereq": "BIO303"
+    },
+    {
+      "course": "BIO503",
+      "prereq": "BIO401"
+    },
+    {
+      "course": "BIO504",
+      "prereq": "BIO304"
+    },
+    {
+      "course": "BIO505",
+      "prereq": "BIO401"
+    },
+    {
+      "course": "BIO506",
+      "prereq": "BIO304"
+    },
+    {
+      "course": "BIO507",
+      "prereq": "BIO506"
+    },
+    {
+      "course": "BIO508",
+      "prereq": "BIO401"
+    },
+    {
+      "course": "BIO701",
+      "prereq": "BIO405"
+    },
+    {
+      "course": "BIO702",
+      "prereq": "BIO701"
+    },
+    {
+      "course": "BIO801",
+      "prereq": "BIO702"
+    },
+    {
+      "course": "HUM102",
+      "prereq": "HUM101"
+    },
+    {
+      "course": "ETI101",
+      "prereq": "BIO302"
+    },
+    {
+      "course": "BIO406",
+      "prereq": "BIO304"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "BIO101",
+      "co_req": "BIO102"
+    },
+    {
+      "course": "QUI101",
+      "co_req": "QUI102"
+    },
+    {
+      "course": "QUI201",
+      "co_req": "QUI202"
+    }
+  ]
+}

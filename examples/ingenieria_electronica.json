@@ -1,0 +1,848 @@
+{
+  "courses": [
+    {
+      "code": "MAT101",
+      "name": "Cálculo Diferencial",
+      "credits": 4,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Cálculo Integral",
+      "credits": 4,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT201",
+      "name": "Cálculo Vectorial",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT202",
+      "name": "Ecuaciones Diferenciales",
+      "credits": 4,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ALG101",
+      "name": "Álgebra Lineal",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física Mecánica",
+      "credits": 4,
+      "semester": 1,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS102",
+      "name": "Física Eléctrica",
+      "credits": 4,
+      "semester": 2,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS103",
+      "name": "Física de Ondas",
+      "credits": 4,
+      "semester": 3,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "QUI101",
+      "name": "Química General",
+      "credits": 3,
+      "semester": 1,
+      "area": "Ciencias Básicas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO101",
+      "name": "Programación Básica",
+      "credits": 3,
+      "semester": 1,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE101",
+      "name": "Circuitos Eléctricos I",
+      "credits": 4,
+      "semester": 2,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE102",
+      "name": "Laboratorio de Circuitos I",
+      "credits": 1,
+      "semester": 2,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE103",
+      "name": "Circuitos Eléctricos II",
+      "credits": 4,
+      "semester": 3,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE104",
+      "name": "Laboratorio de Circuitos II",
+      "credits": 1,
+      "semester": 3,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE103"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE201",
+      "name": "Electrónica Analógica I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE202",
+      "name": "Lab. Electrónica Analógica I",
+      "credits": 1,
+      "semester": 3,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE203",
+      "name": "Electrónica Analógica II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE204",
+      "name": "Lab. Electrónica Analógica II",
+      "credits": 1,
+      "semester": 4,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE203"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIG101",
+      "name": "Electrónica Digital I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIG102",
+      "name": "Laboratorio de Digital I",
+      "credits": 1,
+      "semester": 3,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "DIG101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIG201",
+      "name": "Electrónica Digital II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIG202",
+      "name": "Laboratorio de Digital II",
+      "credits": 1,
+      "semester": 4,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "DIG201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SEÑ101",
+      "name": "Señales y Sistemas",
+      "credits": 4,
+      "semester": 5,
+      "area": "Procesamiento",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SEÑ102",
+      "name": "Procesamiento Digital de Señales",
+      "credits": 4,
+      "semester": 6,
+      "area": "Procesamiento",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON101",
+      "name": "Control Automático I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Control",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON102",
+      "name": "Control Automático II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Control",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON103",
+      "name": "Laboratorio de Control",
+      "credits": 2,
+      "semester": 6,
+      "area": "Control",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "CON102"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM101",
+      "name": "Comunicaciones I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM102",
+      "name": "Comunicaciones II",
+      "credits": 4,
+      "semester": 6,
+      "area": "Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC101",
+      "name": "Microcontroladores",
+      "credits": 3,
+      "semester": 5,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC102",
+      "name": "Laboratorio de Microcontroladores",
+      "credits": 2,
+      "semester": 5,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "MIC101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO201",
+      "name": "Programación Avanzada",
+      "credits": 3,
+      "semester": 4,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS101",
+      "name": "Sistemas Embebidos",
+      "credits": 4,
+      "semester": 7,
+      "area": "Digital",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ROB101",
+      "name": "Robótica",
+      "credits": 4,
+      "semester": 7,
+      "area": "Control",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "RED101",
+      "name": "Redes de Datos",
+      "credits": 3,
+      "semester": 6,
+      "area": "Comunicaciones",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT301",
+      "name": "Matemáticas Especiales",
+      "credits": 3,
+      "semester": 5,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO301",
+      "name": "Proyecto Integrador I",
+      "credits": 4,
+      "semester": 7,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO302",
+      "name": "Proyecto Integrador II",
+      "credits": 4,
+      "semester": 8,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO303",
+      "name": "Trabajo de Grado",
+      "credits": 6,
+      "semester": 9,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "GER101",
+      "name": "Gerencia de Proyectos Tecnológicos",
+      "credits": 3,
+      "semester": 8,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE301",
+      "name": "Electrónica de Potencia",
+      "credits": 4,
+      "semester": 7,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE302",
+      "name": "Instrumentación Industrial",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INT101",
+      "name": "Inteligencia Artificial (electiva)",
+      "credits": 3,
+      "semester": 8,
+      "area": "Electiva",
+      "elective_group": "Electivas Avanzadas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INT102",
+      "name": "Visión por Computador (electiva)",
+      "credits": 3,
+      "semester": 8,
+      "area": "Electiva",
+      "elective_group": "Electivas Avanzadas",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "MAT201",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "MAT202",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "ALG101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "FIS102",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "FIS103",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "ELE101",
+      "prereq": "FIS102"
+    },
+    {
+      "course": "ELE101",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "ELE103",
+      "prereq": "ELE101"
+    },
+    {
+      "course": "ELE201",
+      "prereq": "ELE101"
+    },
+    {
+      "course": "ELE203",
+      "prereq": "ELE201"
+    },
+    {
+      "course": "DIG101",
+      "prereq": "ELE101"
+    },
+    {
+      "course": "DIG201",
+      "prereq": "DIG101"
+    },
+    {
+      "course": "SEÑ101",
+      "prereq": "MAT202"
+    },
+    {
+      "course": "SEÑ101",
+      "prereq": "ELE103"
+    },
+    {
+      "course": "SEÑ102",
+      "prereq": "SEÑ101"
+    },
+    {
+      "course": "CON101",
+      "prereq": "SEÑ101"
+    },
+    {
+      "course": "CON102",
+      "prereq": "CON101"
+    },
+    {
+      "course": "COM101",
+      "prereq": "SEÑ101"
+    },
+    {
+      "course": "COM102",
+      "prereq": "COM101"
+    },
+    {
+      "course": "MIC101",
+      "prereq": "DIG201"
+    },
+    {
+      "course": "PRO201",
+      "prereq": "PRO101"
+    },
+    {
+      "course": "SIS101",
+      "prereq": "MIC101"
+    },
+    {
+      "course": "SIS101",
+      "prereq": "PRO201"
+    },
+    {
+      "course": "ROB101",
+      "prereq": "CON102"
+    },
+    {
+      "course": "RED101",
+      "prereq": "COM101"
+    },
+    {
+      "course": "MAT301",
+      "prereq": "ALG101"
+    },
+    {
+      "course": "PRO301",
+      "prereq": "CON102"
+    },
+    {
+      "course": "PRO301",
+      "prereq": "COM102"
+    },
+    {
+      "course": "PRO302",
+      "prereq": "PRO301"
+    },
+    {
+      "course": "PRO303",
+      "prereq": "PRO302"
+    },
+    {
+      "course": "ELE301",
+      "prereq": "ELE203"
+    },
+    {
+      "course": "ELE302",
+      "prereq": "ELE203"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "ELE101",
+      "co_req": "ELE102"
+    },
+    {
+      "course": "ELE103",
+      "co_req": "ELE104"
+    },
+    {
+      "course": "ELE201",
+      "co_req": "ELE202"
+    },
+    {
+      "course": "ELE203",
+      "co_req": "ELE204"
+    },
+    {
+      "course": "DIG101",
+      "co_req": "DIG102"
+    },
+    {
+      "course": "DIG201",
+      "co_req": "DIG202"
+    },
+    {
+      "course": "CON102",
+      "co_req": "CON103"
+    },
+    {
+      "course": "MIC101",
+      "co_req": "MIC102"
+    }
+  ]
+}

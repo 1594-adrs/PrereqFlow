@@ -1,0 +1,1174 @@
+{
+  "courses": [
+    {
+      "code": "MAT101",
+      "name": "Matemáticas I",
+      "credits": 5,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Matemáticas II",
+      "credits": 5,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT201",
+      "name": "Matemáticas III",
+      "credits": 4,
+      "semester": 3,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT202",
+      "name": "Matemáticas IV",
+      "credits": 3,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT203",
+      "name": "Métodos Numéricos",
+      "credits": 4,
+      "semester": 4,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ALG101",
+      "name": "Álgebra Lineal",
+      "credits": 4,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST201",
+      "name": "Estadística",
+      "credits": 3,
+      "semester": 4,
+      "area": "Estadística",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST301",
+      "name": "Estadística Especial",
+      "credits": 2,
+      "semester": 6,
+      "area": "Estadística",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS101",
+      "name": "Física I",
+      "credits": 2,
+      "semester": 2,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS102",
+      "name": "Laboratorio de Física I",
+      "credits": 4,
+      "semester": 2,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "FIS101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS201",
+      "name": "Física II",
+      "credits": 2,
+      "semester": 3,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS202",
+      "name": "Laboratorio de Física II",
+      "credits": 4,
+      "semester": 3,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "FIS201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS301",
+      "name": "Física III",
+      "credits": 2,
+      "semester": 4,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIS302",
+      "name": "Laboratorio de Física III",
+      "credits": 4,
+      "semester": 4,
+      "area": "Física",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "FIS301"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO101",
+      "name": "Programación I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO102",
+      "name": "Programación II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO201",
+      "name": "Programación Orientada a Objetos",
+      "credits": 3,
+      "semester": 3,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST101",
+      "name": "Estructura de Datos",
+      "credits": 3,
+      "semester": 3,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "LOG101",
+      "name": "Lógica",
+      "credits": 3,
+      "semester": 3,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST102",
+      "name": "Estructura de Lenguajes",
+      "credits": 3,
+      "semester": 4,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM101",
+      "name": "Introducción a la Informática",
+      "credits": 1,
+      "semester": 1,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BD101",
+      "name": "Base de Datos I",
+      "credits": 3,
+      "semester": 5,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "BD201",
+      "name": "Administración de Información",
+      "credits": 1,
+      "semester": 8,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ101",
+      "name": "Arquitectura de Computadores",
+      "credits": 4,
+      "semester": 4,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS101",
+      "name": "Sistemas Operativos I",
+      "credits": 4,
+      "semester": 6,
+      "area": "Sistemas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS201",
+      "name": "Sistemas Distribuidos",
+      "credits": 3,
+      "semester": 7,
+      "area": "Sistemas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "RED101",
+      "name": "Comunicaciones I",
+      "credits": 4,
+      "semester": 5,
+      "area": "Redes",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "RED201",
+      "name": "Comunicaciones II",
+      "credits": 2,
+      "semester": 6,
+      "area": "Redes",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "RED301",
+      "name": "Comunicaciones III",
+      "credits": 3,
+      "semester": 8,
+      "area": "Redes",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ARQ201",
+      "name": "Arquitectura Cliente/Servidor",
+      "credits": 3,
+      "semester": 8,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ISW101",
+      "name": "Ingeniería de Software I",
+      "credits": 3,
+      "semester": 5,
+      "area": "Ing. Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ISW201",
+      "name": "Ingeniería de Software II",
+      "credits": 3,
+      "semester": 6,
+      "area": "Ing. Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ISW301",
+      "name": "Laboratorio de Software",
+      "credits": 3,
+      "semester": 7,
+      "area": "Ing. Software",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ISW201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM201",
+      "name": "Compiladores",
+      "credits": 3,
+      "semester": 7,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS301",
+      "name": "Sistemas Expertos",
+      "credits": 3,
+      "semester": 9,
+      "area": "Computación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "TEC101",
+      "name": "Nuevas Tecnologías Informáticas",
+      "credits": 4,
+      "semester": 8,
+      "area": "Tecnologías",
+      "elective_group": "Tecnologías Emergentes",
+      "required": false,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE101",
+      "name": "Electrónica I",
+      "credits": 2,
+      "semester": 4,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE102",
+      "name": "Laboratorio de Electrónica I",
+      "credits": 3,
+      "semester": 4,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE201",
+      "name": "Electrónica II",
+      "credits": 3,
+      "semester": 5,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ELE202",
+      "name": "Laboratorio de Electrónica II",
+      "credits": 3,
+      "semester": 5,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "ELE201"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC101",
+      "name": "Microcontroladores",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MIC102",
+      "name": "Lab. Microcontroladores",
+      "credits": 3,
+      "semester": 7,
+      "area": "Electrónica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [
+        "MIC101"
+      ],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS401",
+      "name": "Teoría de Sistemas",
+      "credits": 3,
+      "semester": 4,
+      "area": "Ingeniería",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INV101",
+      "name": "Investigación de Operaciones",
+      "credits": 2,
+      "semester": 6,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ADM101",
+      "name": "Administración de Empresas",
+      "credits": 2,
+      "semester": 4,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON101",
+      "name": "Sistemas Contables",
+      "credits": 3,
+      "semester": 5,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON201",
+      "name": "Contabilidad de Costos",
+      "credits": 3,
+      "semester": 6,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ECO101",
+      "name": "Teoría Económica",
+      "credits": 4,
+      "semester": 5,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIN101",
+      "name": "Finanzas",
+      "credits": 2,
+      "semester": 7,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "GER101",
+      "name": "Gerencia Institucional",
+      "credits": 2,
+      "semester": 9,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "GER201",
+      "name": "Gerencia de Proyectos",
+      "credits": 3,
+      "semester": 9,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PLA101",
+      "name": "Planeación Estratégica de Sistemas",
+      "credits": 6,
+      "semester": 9,
+      "area": "Gestión",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "AUD101",
+      "name": "Auditoría de Sistemas",
+      "credits": 2,
+      "semester": 8,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER101",
+      "name": "Legislación y Ética",
+      "credits": 1,
+      "semester": 7,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER201",
+      "name": "Constitución Política",
+      "credits": 3,
+      "semester": 8,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM101",
+      "name": "Humanidades I",
+      "credits": 1,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM201",
+      "name": "Humanidades II",
+      "credits": 4,
+      "semester": 3,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "COM102",
+      "name": "Técnicas de Comunicación",
+      "credits": 3,
+      "semester": 1,
+      "area": "Comunicación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DIB101",
+      "name": "Dibujo",
+      "credits": 4,
+      "semester": 6,
+      "area": "Diseño",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DEP101",
+      "name": "Deportes I",
+      "credits": 5,
+      "semester": 1,
+      "area": "Formación Básica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DEP102",
+      "name": "Deportes II",
+      "credits": 5,
+      "semester": 2,
+      "area": "Formación Básica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO301",
+      "name": "Proyecto de Grado I",
+      "credits": 3,
+      "semester": 9,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": 120,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRO302",
+      "name": "Proyecto de Grado II",
+      "credits": 3,
+      "semester": 10,
+      "area": "Proyecto",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": 140,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "SIS501",
+      "name": "Ing. Sistemas y Computación",
+      "credits": 2,
+      "semester": 1,
+      "area": "Formación Básica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "PRO102",
+      "prereq": "PRO101"
+    },
+    {
+      "course": "PRO201",
+      "prereq": "PRO102"
+    },
+    {
+      "course": "ISW101",
+      "prereq": "PRO201"
+    },
+    {
+      "course": "ISW201",
+      "prereq": "ISW101"
+    },
+    {
+      "course": "PRO301",
+      "prereq": "ISW201"
+    },
+    {
+      "course": "PRO302",
+      "prereq": "PRO301"
+    },
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "MAT201",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "MAT202",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "MAT203",
+      "prereq": "MAT202"
+    },
+    {
+      "course": "FIS201",
+      "prereq": "FIS101"
+    },
+    {
+      "course": "FIS301",
+      "prereq": "FIS201"
+    },
+    {
+      "course": "EST301",
+      "prereq": "EST201"
+    },
+    {
+      "course": "EST102",
+      "prereq": "EST101"
+    },
+    {
+      "course": "PRO201",
+      "prereq": "EST101"
+    },
+    {
+      "course": "COM201",
+      "prereq": "EST101"
+    },
+    {
+      "course": "COM201",
+      "prereq": "LOG101"
+    },
+    {
+      "course": "SIS201",
+      "prereq": "ARQ101"
+    },
+    {
+      "course": "SIS201",
+      "prereq": "SIS101"
+    },
+    {
+      "course": "BD201",
+      "prereq": "BD101"
+    },
+    {
+      "course": "BD101",
+      "prereq": "PRO102"
+    },
+    {
+      "course": "ARQ201",
+      "prereq": "BD101"
+    },
+    {
+      "course": "ARQ201",
+      "prereq": "SIS101"
+    },
+    {
+      "course": "GER201",
+      "prereq": "FIN101"
+    },
+    {
+      "course": "FIN101",
+      "prereq": "ADM101"
+    },
+    {
+      "course": "CON101",
+      "prereq": "CON201"
+    },
+    {
+      "course": "ELE201",
+      "prereq": "ELE101"
+    },
+    {
+      "course": "MIC101",
+      "prereq": "ELE201"
+    },
+    {
+      "course": "PRO302",
+      "prereq": "GER201"
+    },
+    {
+      "course": "RED201",
+      "prereq": "RED101"
+    },
+    {
+      "course": "RED301",
+      "prereq": "RED201"
+    },
+    {
+      "course": "SIS101",
+      "prereq": "ARQ101"
+    },
+    {
+      "course": "ARQ101",
+      "prereq": "EST101"
+    },
+    {
+      "course": "PRO101",
+      "prereq": "COM101"
+    },
+    {
+      "course": "PRO101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "FIS101",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "ALG101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "FIS201",
+      "prereq": "ALG101"
+    },
+    {
+      "course": "EST101",
+      "prereq": "PRO102"
+    },
+    {
+      "course": "SIS401",
+      "prereq": "MAT201"
+    },
+    {
+      "course": "INV101",
+      "prereq": "EST201"
+    }
+  ],
+  "co_requisites": [
+    {
+      "course": "FIS101",
+      "co_req": "FIS102"
+    },
+    {
+      "course": "FIS201",
+      "co_req": "FIS202"
+    },
+    {
+      "course": "FIS301",
+      "co_req": "FIS302"
+    },
+    {
+      "course": "ELE101",
+      "co_req": "ELE102"
+    },
+    {
+      "course": "ELE201",
+      "co_req": "ELE202"
+    },
+    {
+      "course": "MIC101",
+      "co_req": "MIC102"
+    },
+    {
+      "course": "ISW201",
+      "co_req": "ISW301"
+    }
+  ]
+}

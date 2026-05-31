@@ -1,0 +1,769 @@
+{
+  "courses": [
+    {
+      "code": "CON101",
+      "name": "Contabilidad General I",
+      "credits": 4,
+      "semester": 1,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON102",
+      "name": "Contabilidad General II",
+      "credits": 4,
+      "semester": 2,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ECO101",
+      "name": "Economía General",
+      "credits": 3,
+      "semester": 1,
+      "area": "Economía",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT101",
+      "name": "Matemáticas Básicas",
+      "credits": 3,
+      "semester": 1,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "MAT102",
+      "name": "Matemáticas Financieras",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER101",
+      "name": "Derecho Comercial",
+      "credits": 2,
+      "semester": 1,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER102",
+      "name": "Derecho Laboral",
+      "credits": 2,
+      "semester": 3,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ADM101",
+      "name": "Fundamentos de Administración",
+      "credits": 3,
+      "semester": 1,
+      "area": "Administración",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON201",
+      "name": "Contabilidad de Costos I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON202",
+      "name": "Contabilidad de Costos II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON301",
+      "name": "Contabilidad Financiera I",
+      "credits": 4,
+      "semester": 3,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON302",
+      "name": "Contabilidad Financiera II",
+      "credits": 4,
+      "semester": 4,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON303",
+      "name": "Contabilidad Financiera III",
+      "credits": 4,
+      "semester": 5,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON401",
+      "name": "Contabilidad de Sociedades",
+      "credits": 3,
+      "semester": 5,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON402",
+      "name": "Contabilidad Gubernamental",
+      "credits": 3,
+      "semester": 6,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON403",
+      "name": "Contabilidad Tributaria I",
+      "credits": 3,
+      "semester": 5,
+      "area": "Tributaria",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON404",
+      "name": "Contabilidad Tributaria II",
+      "credits": 3,
+      "semester": 6,
+      "area": "Tributaria",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON501",
+      "name": "Contabilidad Internacional (NIIF)",
+      "credits": 3,
+      "semester": 6,
+      "area": "Contabilidad",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "AUD101",
+      "name": "Auditoría General I",
+      "credits": 3,
+      "semester": 6,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "AUD102",
+      "name": "Auditoría General II",
+      "credits": 3,
+      "semester": 7,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "AUD201",
+      "name": "Auditoría de Sistemas",
+      "credits": 3,
+      "semester": 8,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIN101",
+      "name": "Finanzas Corporativas",
+      "credits": 4,
+      "semester": 5,
+      "area": "Finanzas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "FIN102",
+      "name": "Gestión Financiera",
+      "credits": 3,
+      "semester": 6,
+      "area": "Finanzas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST101",
+      "name": "Estadística",
+      "credits": 3,
+      "semester": 2,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "EST102",
+      "name": "Estadística Aplicada a la Contaduría",
+      "credits": 3,
+      "semester": 5,
+      "area": "Matemáticas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER201",
+      "name": "Derecho Tributario",
+      "credits": 3,
+      "semester": 4,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "DER202",
+      "name": "Derecho Societario",
+      "credits": 2,
+      "semester": 4,
+      "area": "Derecho",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ETI101",
+      "name": "Ética Profesional del Contador",
+      "credits": 2,
+      "semester": 7,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON601",
+      "name": "Práctica Contable I",
+      "credits": 4,
+      "semester": 7,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON602",
+      "name": "Práctica Contable II",
+      "credits": 4,
+      "semester": 8,
+      "area": "Práctica",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON603",
+      "name": "Seminario de Investigación Contable",
+      "credits": 3,
+      "semester": 8,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON701",
+      "name": "Trabajo de Grado",
+      "credits": 6,
+      "semester": 9,
+      "area": "Investigación",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INF101",
+      "name": "Informática Contable",
+      "credits": 3,
+      "semester": 3,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "INF102",
+      "name": "Software Contable Aplicado",
+      "credits": 3,
+      "semester": 5,
+      "area": "Tecnología",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "PRE101",
+      "name": "Presupuesto y Evaluación de Proyectos",
+      "credits": 3,
+      "semester": 7,
+      "area": "Finanzas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ING101",
+      "name": "Inglés Técnico I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Idiomas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ING102",
+      "name": "Inglés Técnico II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Idiomas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "ING201",
+      "name": "Inglés Técnico III",
+      "credits": 2,
+      "semester": 3,
+      "area": "Idiomas",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM101",
+      "name": "Humanidades I",
+      "credits": 2,
+      "semester": 1,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "HUM102",
+      "name": "Humanidades II",
+      "credits": 2,
+      "semester": 2,
+      "area": "Humanidades",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON801",
+      "name": "Revisoría Fiscal",
+      "credits": 3,
+      "semester": 8,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    },
+    {
+      "code": "CON802",
+      "name": "Peritaje Contable",
+      "credits": 2,
+      "semester": 8,
+      "area": "Auditoría",
+      "elective_group": null,
+      "required": true,
+      "co_requisites": [],
+      "min_completed_credits": null,
+      "weight": 1.0,
+      "difficulty": 1.0,
+      "semester_offered": null,
+      "metadata": {}
+    }
+  ],
+  "prerequisites": [
+    {
+      "course": "CON102",
+      "prereq": "CON101"
+    },
+    {
+      "course": "MAT102",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "CON201",
+      "prereq": "CON102"
+    },
+    {
+      "course": "CON202",
+      "prereq": "CON201"
+    },
+    {
+      "course": "CON301",
+      "prereq": "CON102"
+    },
+    {
+      "course": "CON302",
+      "prereq": "CON301"
+    },
+    {
+      "course": "CON303",
+      "prereq": "CON302"
+    },
+    {
+      "course": "CON401",
+      "prereq": "CON301"
+    },
+    {
+      "course": "CON402",
+      "prereq": "CON303"
+    },
+    {
+      "course": "CON403",
+      "prereq": "CON301"
+    },
+    {
+      "course": "CON404",
+      "prereq": "CON403"
+    },
+    {
+      "course": "CON501",
+      "prereq": "CON303"
+    },
+    {
+      "course": "AUD101",
+      "prereq": "CON302"
+    },
+    {
+      "course": "AUD102",
+      "prereq": "AUD101"
+    },
+    {
+      "course": "AUD201",
+      "prereq": "AUD102"
+    },
+    {
+      "course": "FIN101",
+      "prereq": "MAT102"
+    },
+    {
+      "course": "FIN101",
+      "prereq": "CON302"
+    },
+    {
+      "course": "FIN102",
+      "prereq": "FIN101"
+    },
+    {
+      "course": "EST102",
+      "prereq": "EST101"
+    },
+    {
+      "course": "DER201",
+      "prereq": "DER101"
+    },
+    {
+      "course": "DER202",
+      "prereq": "DER101"
+    },
+    {
+      "course": "CON601",
+      "prereq": "CON303"
+    },
+    {
+      "course": "CON602",
+      "prereq": "CON601"
+    },
+    {
+      "course": "CON603",
+      "prereq": "EST102"
+    },
+    {
+      "course": "CON701",
+      "prereq": "CON603"
+    },
+    {
+      "course": "INF101",
+      "prereq": "MAT101"
+    },
+    {
+      "course": "INF102",
+      "prereq": "INF101"
+    },
+    {
+      "course": "PRE101",
+      "prereq": "FIN101"
+    },
+    {
+      "course": "ING102",
+      "prereq": "ING101"
+    },
+    {
+      "course": "ING201",
+      "prereq": "ING102"
+    },
+    {
+      "course": "HUM102",
+      "prereq": "HUM101"
+    },
+    {
+      "course": "CON801",
+      "prereq": "AUD102"
+    },
+    {
+      "course": "CON802",
+      "prereq": "AUD101"
+    }
+  ],
+  "co_requisites": []
+}

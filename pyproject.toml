@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "prereqflow"
+version = "1.0.0"
+description = "Planificador académico basado en grafos dirigidos"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Andrés David Rincón Salazar"},
+]
+keywords = [
+    "academic", "planning", "graph", "prerequisites",
+    "university", "curriculum", "streamlit",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+]
+dependencies = [
+    "streamlit>=1.27",
+    "networkx>=3.0",
+    "pyvis>=0.3.1",
+    "pandas>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/1594-adrs/PrereqFlow"
+Repository = "https://github.com/1594-adrs/PrereqFlow"
+Issues = "https://github.com/1594-adrs/PrereqFlow/issues"
+
+[project.scripts]
+prereqflow = "prereqflow.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["prereqflow*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
