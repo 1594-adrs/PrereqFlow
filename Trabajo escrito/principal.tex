@@ -1,0 +1,923 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\chapter}{}{}
+
+\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    language=Python,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1 {Ñ}{{\~N}}1 {ü}{{\"u}}1 {Ü}{{\"U}}1 {¿}{{?`}}1 {¡}{{!`}}1,
+}
+
+\lstset{style=mystyle}
+
+\def \unidad{\textbf{Facultad de Ingenierías}}
+\def \programa{Ingeniería de Sistemas y Computación}
+\def \curso{Estructuras de Datos}
+\def \titulo{PrereqFlow: Plataforma Web para la Exploración Visual Interactiva y Gestión Dinámica de Rutas Curriculares}
+\def \subtitulo{Planificador académico basado en grafos dirigidos con edición en caliente, carga dinámica de archivos y seguimiento multi-periodo de progreso estudiantil}
+\def \autores{
+    Andrés David Rincón Salazar\\
+    andres.rincon2@utp.edu.co\\
+    ID: 1.128.905.513\\
+}
+\def \fecha{- Mayo 2026 -}
+\def \lugar{\textbf{Pereira, Colombia}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+}
+
+\begin{document}
+
+\input{portada}
+\tableofcontents
+
+\newpage
+
+%==============================================================================
+\chapter{Introducción}
+%==============================================================================
+
+La planificación académica universitaria es un proceso de alta complejidad que involucra la coordinación de decenas de asignaturas, sus prerrequisitos, corequisitos, disponibilidad semestral y restricciones de créditos. Los programas de pregrado en ingeniería, en particular, presentan estructuras curriculares densamente interconectadas donde cada decisión de matrícula afecta las opciones futuras del estudiante. Tradicionalmente, explorar estas dependencias se realiza mediante mallas curriculares estáticas impresas o archivos PDF, herramientas que ofrecen una visión unidimensional y carecen de interactividad.
+
+PrereqFlow emerge como una solución integral que aborda esta problemática desde tres frentes complementarios: la visualización interactiva del plan de estudios, la planificación automatizada de semestres, y la gestión dinámica del progreso académico. En su núcleo, el sistema modela el plan de estudios como un \textbf{grafo dirigido acíclico} (DAG), donde cada nodo representa una asignatura con sus metadatos académicos (créditos, área, semestre sugerido) y cada arista dirigida representa una relación de prerrequisito.
+
+El proyecto se concibió originalmente como un planificador académico con visualización de grafos, pero evolucionó hasta convertirse en una plataforma completa de gestión curricular. Las tres fases de desarrollo que se documentan en este trabajo transformaron la herramienta de un simple visor a un entorno interactivo completo:
+
+\begin{enumerate}
+    \item \textbf{Fase 1 -- Edición interactiva en caliente:} Capacidad de agregar, modificar y eliminar cursos y sus dependencias directamente desde la interfaz web, con actualización inmediata del grafo y del planificador.
+        \item \textbf{Fase 2 -- Carga dinámica Drag \& Drop:} Sistema de carga de archivos curriculares personalizados (JSON) mediante arrastrar y soltar, con validación automática, guía de formato y retroalimentación visual.
+    \item \textbf{Fase 3 -- Electivas y seguimiento multi-periodo:} Gestor de grupos electivos con reglas de selección configurables, registro de progreso semestre a semestre y simulador what-if para exploración de rutas alternativas.
+\end{enumerate}
+
+El presente documento describe en detalle la arquitectura, diseño, implementación y resultados de PrereqFlow, tomando como caso de estudio el currículo de Ingeniería de Sistemas y Computación de la Universidad Tecnológica de Pereira (UTP), con 64 asignaturas distribuidas en 10 semestres académicos.
+
+%==============================================================================
+\chapter{Objetivos}
+%==============================================================================
+
+\section{Objetivo General}
+
+Desarrollar e implementar un entorno web interactivo basado en grafos dirigidos para la gestión, edición en tiempo real y análisis dinámico de prerrequisitos y dependencias académicas, integrando capacidades de planificación semestral automatizada, carga de archivos curriculares personalizados y seguimiento multi-periodo del progreso estudiantil.
+
+\section{Objetivos Específicos}
+
+\begin{enumerate}[label=\alph*)]
+
+    \item \textbf{Diseñar un motor de renderizado con física de nodos.} Implementar la visualización interactiva del grafo curricular utilizando Force-Directed Graph Drawing, que permita exploración visual mediante zoom, paneo y reorganización dinámica de nodos, con codificación cromática por área académica.
+
+    \item \textbf{Implementar algoritmos DAG de planificación.} Desarrollar detección de ciclos mediante DFS, ordenamiento topológico, cierre transitivo de prerrequisitos y cálculo de profundidad de dependencias como base para la generación automatizada de planes de estudio semestrales con tres estrategias de priorización: balanceada, rápida y de bajo riesgo.
+
+    \item \textbf{Crear un sistema de edición interactiva en caliente.} Implementar formularios dinámicos en la interfaz web que permitan agregar, modificar y eliminar cursos, prerrequisitos y corequisitos, con actualización instantánea del grafo y el planificador sin necesidad de recargar la página.
+
+    \item \textbf{Desarrollar un módulo de carga dinámica Drag \& Drop.} Implementar un componente de interfaz que acepte archivos JSON mediante arrastrar y soltar, con validación de estructura, detección de errores, guía de formato integrada, retroalimentación visual inmediata y generación de vista previa del contenido cargado.
+
+    \item \textbf{Estructurar un sistema de seguimiento multi-periodo.} Crear un registro de progreso académico que almacene el historial de cursos aprobados semestre a semestre, calcule créditos acumulados, genere estadísticas de avance y soporte simulación what-if para explorar diferentes rutas de finalización.
+
+    \item \textbf{Implementar soporte avanzado para grupos electivos.} Diseñar un gestor de grupos electivos con reglas de selección configurables (mínimo/máximo de cursos y créditos), validación automática de selecciones y seguimiento del cumplimiento de requisitos.
+
+\end{enumerate}
+
+%==============================================================================
+\chapter{Marco Teórico}
+%==============================================================================
+
+\section{Grafos Dirigidos Acíclicos (DAG)}
+
+Un \textbf{grafo dirigido} o digrafo $G = (V, E)$ consiste en un conjunto finito de vértices $V$ y un conjunto de aristas $E \subseteq V \times V$ donde cada arista $(u, v)$ tiene una dirección que va de $u$ hacia $v$ (Cormen et al., 2009). En PrereqFlow, los vértices representan asignaturas y las aristas $(A, B)$ indican que $A$ es prerrequisito de $B$, es decir, debe cursarse antes.
+
+Un \textbf{grafo dirigido acíclico} (DAG) es un digrafo sin ciclos dirigidos. La ausencia de ciclos es una condición necesaria para que un plan de estudios sea factible, pues un ciclo $A \to B \to C \to A$ implicaría una dependencia circular imposible de resolver. Todo DAG admite al menos un \textbf{ordenamiento topológico}: una permutación lineal de sus vértices tal que para toda arista $(u, v)$, $u$ aparece antes que $v$ (Knuth, 1997). Este concepto es fundamental para determinar la secuencia óptima en que deben cursarse las asignaturas.
+
+\section{Force-Directed Graph Drawing}
+
+Los algoritmos de \textbf{Force-Directed Graph Drawing} asignan posiciones a los nodos de un grafo simulando un sistema de fuerzas físicas (Fruchterman \& Reingold, 1991). En esta analogía mecánica:
+\begin{itemize}
+    \item Todos los nodos ejercen \textbf{fuerzas de repulsión} entre sí (análogas a la repulsión electrostática de Coulomb).
+    \item Los nodos conectados por una arista ejercen \textbf{fuerzas de atracción} mutua (análogas a resortes Hookeanos).
+    \item El sistema itera hasta alcanzar un estado de \textbf{equilibrio energético mínimo}, produciendo una disposición visualmente estética donde los nodos densamente conectados aparecen agrupados.
+\end{itemize}
+
+La biblioteca \texttt{vis-network} (utilizada a través de PyVis) implementa este tipo de simulación en el navegador mediante un motor de física basado en el modelo de Barnes-Hut para la repulsión de N-cuerpos ($O(n \log n)$) y resortes para las aristas. El usuario puede interactuar arrastrando nodos, observando cómo el sistema se reacomoda dinámicamente.
+
+\section{Complejidad Algorítmica}
+
+Las operaciones fundamentales implementadas en PrereqFlow presentan las siguientes complejidades temporales:
+
+\begin{itemize}
+    \item \textbf{Detección de ciclos} (DFS con pila): $O(V + E)$.
+    \item \textbf{Ordenamiento topológico} (DFS postorden): $O(V + E)$.
+    \item \textbf{Cierre transitivo de prerrequisitos}: $O(V + E)$ en el peor caso.
+    \item \textbf{Cálculo de profundidad de dependencias}: $O(V + E)$ recursivo.
+    \item \textbf{Planificación semestral greedy}: $O(S \cdot V \cdot (V + E))$ donde $S$ es el número de semestres.
+    \item \textbf{Validación de grupos electivos}: $O(C)$ donde $C$ es el número de cursos en el grupo.
+\end{itemize}
+
+Estas complejidades son adecuadas para currículos universitarios típicos, que rara vez superan los 200 cursos y 500 relaciones. En la práctica, el planificador procesa el currículo UTP (64 cursos, 34 prerrequisitos) en menos de 0.1 segundos.
+
+\section{Streamlit y Componentes Web}
+
+Streamlit es un framework de Python de código abierto para la creación de aplicaciones web interactivas orientadas a datos (Streamlit Inc., 2023). Su modelo de ejecución reactiva re-ejecuta el script completo ante cualquier interacción del usuario, simplificando el desarrollo. Los componentes HTML/JavaScript se integran mediante \texttt{streamlit.components.v1.html()}, que permite embeber contenido web arbitrario en un iframe.
+
+%==============================================================================
+\chapter{Desarrollo del Proyecto}
+%==============================================================================
+
+\section{Metodología}
+
+El desarrollo de PrereqFlow siguió un enfoque iterativo e incremental organizado en tres fases principales:
+
+\begin{enumerate}
+    \item \textbf{Fase base (Planificador):} Implementación del modelo de grafo, algoritmos DAG y planificador semestral con visualización PyVis.
+    \item \textbf{Fase 1 (Edición interactiva):} Desarrollo de formularios dinámicos para agregar, editar y eliminar cursos y dependencias en tiempo real.
+    \item \textbf{Fase 2 (Carga dinámica):} Creación del componente Drag \& Drop para archivos curriculares JSON con validación, guía de formato y vista previa.
+    \item \textbf{Fase 3 (Electivas y seguimiento):} Implementación del gestor de grupos electivos, registro de progreso multi-periodo y simulador what-if.
+\end{enumerate}
+
+Cada fase incluyó ciclos de diseño, implementación, prueba e integración. Se priorizó la retroalimentación visual inmediata para todas las operaciones del usuario.
+
+\section{Stack Tecnológico}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Tecnología} & \textbf{Versión} & \textbf{Propósito} \\
+        \midrule
+        Python & 3.14 & Lenguaje de programación principal \\
+        Streamlit & $\ge$ 1.27 & Framework de interfaz web reactiva \\
+        PyVis & $\ge$ 0.3.1 & Visualización interactiva de grafos \\
+        Pytest & $\ge$ 8.0 & Framework de pruebas unitarias \\
+        vis-network & 9.1.2 & Motor de física y renderizado de nodos \\
+        Tom Select & -- & Componente de selección múltiple \\
+        \bottomrule
+    \end{tabular}
+    \caption{Stack tecnológico de PrereqFlow.}
+    \label{tab:stack}
+\end{table}
+
+\section{Integración de Nuevas Fases}
+
+\subsection{Fase 1: Edición Interactiva}
+Se creó el módulo \texttt{prereqflow/editor.py} que expone la función \texttt{render\_course\_editor()}. Este componente ofrece:
+\begin{itemize}
+    \item Formulario de creación de cursos con campos para código, nombre, créditos, semestre, área y oferta semestral.
+    \item Panel de edición con modificación de todos los atributos del curso.
+    \item Controles para agregar y eliminar prerrequisitos y corequisitos mediante selectores.
+    \item Botón de eliminación de cursos que limpia todas las relaciones asociadas.
+\end{itemize}
+La integración con \texttt{main.py} se realiza mediante un selector de modo en la barra lateral que alterna entre planificación y edición.
+
+\subsection{Fase 2: Carga Dinámica Drag \& Drop}
+La interfaz de carga se organiza en dos capas: \texttt{prereqflow/modes/uploader\_ui.py} proporciona el envoltorio de Streamlit con título, instrucciones y guía colapsable del formato JSON esperado, y \texttt{prereqflow/uploader.py} implementa \texttt{render\_file\_uploader()} que:
+\begin{itemize}
+    \item Utiliza el componente nativo \texttt{st.file\_uploader} de Streamlit limitado a extensiones .json.
+    \item Verifica la presencia de la clave 'courses' y delega en \texttt{PrereqGraph.from\_dict()}.
+    \item Detecta ciclos automáticamente y muestra advertencias si el grafo cargado no es acíclico.
+    \item Proporciona vista previa expandible de todos los cursos cargados.
+    \item No incluye botón \enquote{Volver al planificador}---el cambio de modo se realiza exclusivamente mediante el selector de la barra lateral.
+\end{itemize}
+
+\subsection{Fase 3: Electivas y Seguimiento Multi-periodo}
+El módulo \texttt{prereqflow/tracker.py} introduce tres clases fundamentales:
+\begin{itemize}
+    \item \textbf{StudentRecord}: Almacena el historial de cursos aprobados por semestre, créditos acumulados y selecciones de electivas.
+    \item \textbf{ElectiveGroup}: Define un grupo electivo con reglas (\texttt{min\_select}, \texttt{max\_select}, \texttt{min\_credits}).
+    \item \textbf{ElectiveManager}: Gestiona múltiples grupos y valida selecciones.
+    \item \textbf{ProgressTracker}: Orquesta el seguimiento, la simulación y las consultas de progreso.
+\end{itemize}
+
+%==============================================================================
+\chapter{Diseño de la Solución}
+%==============================================================================
+
+\section{Arquitectura del Sistema}
+
+PrereqFlow sigue una arquitectura en tres capas con un módulo de presentación web y dos capas de backend:
+
+\begin{verbatim}
++----------------------------------------------------------+
+|           CAPA DE PRESENTACIÓN (main.py)                  |
+|  modes/planner_ui.py (plan + grafo + info curso)         |
+|  modes/editor_ui.py  (formularios dinámicos + guardado)  |
+|  modes/uploader_ui.py (Drag & Drop + guía de formato)    |
+|  modes/tracker_ui.py  (progreso + electivas + simulador)  |
++----------------------------------------------------------+
+              |                        ^
+              | llamadas               | datos/eventos
+              v                        |
++----------------------------------------------------------+
+|           CAPA DE LÓGICA (prereqflow/)                    |
+|  models.py         -> Course (dataclass)                  |
+|  graph.py          -> PrereqGraph (DAG)                   |
+|  planner.py        -> SemesterPlanner                     |
+|  editor.py         -> render_course_editor()              |
+|  tracker.py        -> ProgressTracker, ElectiveManager    |
+|  uploader.py       -> render_file_uploader()              |
+|  visualization.py  -> build_pyvis_network()               |
+|  utils.py          -> course_label(), course_select()      |
++----------------------------------------------------------+
+              |                        ^
+              | llamadas               | datos/eventos
+              v                        |
++----------------------------------------------------------+
+|           CAPA DE LOGICA (prereqflow/)                     |
+|  models.py         -> Course (dataclass)                  |
+|  graph.py          -> PrereqGraph (DAG)                   |
+|  planner.py        -> SemesterPlanner                     |
+|  editor.py         -> render_course_editor()              |
+|  tracker.py        -> ProgressTracker, ElectiveManager    |
+|  uploader.py       -> render_file_uploader()              |
+|  visualization.py  -> build_pyvis_network()               |
+|  utils.py          -> course_label(), course_select()      |
++----------------------------------------------------------+
+              |                        ^
+              | serializacion          | deserializacion
+              v                        |
++----------------------------------------------------------+
+|           CAPA DE DATOS                                   |
+|  io.py -> save/load_graph_to_json()                       |
+|  data/utp_sistemas.json                                   |
+|  examples/ (12 currículos JSON)                           |
++----------------------------------------------------------+
+\end{verbatim}
+
+\section{Exploración Visual Interactiva y Filtros por Área}
+
+La visualización del grafo se construye mediante PyVis, que a su vez utiliza vis-network.js. Cada nodo se colorea según su área académica mediante la función \texttt{\_area\_color()}:
+
+\begin{lstlisting}[caption=Esquema de colores por área académica, label=lst:colors, language=Python]
+COLOR_MAP = {
+    "matematicas": "#8ecae6",  # Azul claro
+    "computacion": "#219ebc",  # Azul medio
+    "programacion": "#219ebc", # Azul medio
+    "sistemas":     "#fb8500", # Naranja
+    "redes":        "#ffb703", # Amarillo
+    "proyecto":     "#6a4c93", # Purpura
+    "electronica":  "#e76f51", # Terracota
+    "gestion":      "#2a9d8f", # Verde azulado
+    "fisica":       "#52b788", # Verde
+    "humanidades":  "#c77dff", # Lavanda
+}
+\end{lstlisting}
+
+\section{Edición Interactiva en Caliente}
+
+El editor interactivo permite modificar el grafo sin recargar la aplicación. La arquitectura de Streamlit (re-ejecución completa del script en cada interacción) garantiza que cualquier cambio en el grafo se refleje inmediatamente en todas las vistas:
+
+\label{sec:hot-editing}
+Cuando el usuario:
+\begin{enumerate}
+    \item Agrega un curso: se instancia un objeto \texttt{Course} y se llama a \texttt{graph.add\_course()}.
+    \item Edita propiedades: se modifican los atributos del dataclass directamente en memoria.
+    \item Agrega un prerrequisito: se ejecuta \texttt{graph.add\_prerequisite()} con validación.
+    \item Elimina un curso: se ejecuta \texttt{graph.remove\_course()} que limpia todas las relaciones.
+\end{enumerate}
+
+Tras cada operación, \texttt{st.rerun()} fuerza la re-ejecución de \texttt{main.py}, actualizando el grafo visual, el planificador y los selectores automáticamente.
+
+\section{Sistema de Carga Dinámica por Drag \& Drop}
+
+El sistema de carga procesa archivos curriculares siguiendo este flujo:
+
+\begin{enumerate}
+    \item El modo \texttt{render\_uploader\_mode()} muestra el título y una guía colapsable del formato JSON esperado.
+    \item El usuario arrastra un archivo .json al área de carga.
+    \item Streamlit expone el contenido como un objeto \texttt{UploadedFile}.
+    \item Se decodifica a diccionario y se construye el \texttt{PrereqGraph}.
+    \item Se ejecuta \texttt{detect\_cycle()} en el grafo resultante.
+    \item Se muestra un resumen con número de cursos, prerrequisitos y corequisitos.
+    \item Si el grafo es válido, se reemplaza el grafo actual en \texttt{st.session\_state}.
+\end{enumerate}
+
+\subsection{Validación y Manejo de Errores}
+
+El sistema valida:
+\begin{itemize}
+    \item Que el archivo no esté vacío.
+    \item Que la extensión sea .json.
+    \item Que el JSON contenga la clave ``courses''.
+    \item Que todos los cursos referenciados en prerrequisitos existan.
+    \item Que no haya autoprerrequisitos (un curso no puede ser prerrequisito de sí mismo).
+\end{itemize}
+
+\section{Algoritmo de Procesamiento de Electivas y Seguimiento Multi-periodo}
+
+\subsection{Grupos Electivos}
+
+Cada \texttt{ElectiveGroup} define:
+\begin{itemize}
+    \item Un conjunto de códigos de cursos que pertenecen al grupo.
+    \item Reglas de selección: \texttt{min\_select} (mínimo de cursos), \texttt{max\_select} (máximo), \texttt{min\_credits} (mínimo de créditos).
+    \item Una descripción textual del grupo.
+\end{itemize}
+
+\subsection{Seguimiento de Progreso}
+
+El \texttt{ProgressTracker} mantiene un \texttt{StudentRecord} que evoluciona con cada semestre registrado:
+
+\begin{enumerate}
+    \item El usuario selecciona los cursos aprobados en el semestre.
+    \item Se validan los prerrequisitos contra el historial acumulado.
+    \item Si es válido, se actualiza el conjunto de cursos completados y los créditos.
+    \item Se genera un resumen con métricas de avance (cursos, créditos, porcentaje).
+\end{enumerate}
+
+\subsection{Simulador What-If}
+
+El simulador permite explorar escenarios hipotéticos sin modificar el registro real. Dado un conjunto de cursos simulados como aprobados:
+\begin{enumerate}
+    \item Se calcula el nuevo conjunto de cursos completados (reales + simulados).
+    \item Se recalculan los créditos totales.
+    \item Se consultan los cursos elegibles para el siguiente semestre.
+    \item Se presenta al usuario el panorama simulado.
+\end{enumerate}
+
+%==============================================================================
+\chapter{Implementación en Python y JavaScript}
+%==============================================================================
+
+\section{Modelo de Datos: Course y PrereqGraph}
+
+El modelo central del sistema es la clase \texttt{PrereqGraph}, que mantiene tres diccionarios paralelos para consultas bidireccionales eficientes:
+
+\begin{lstlisting}[caption=Estructura interna del PrereqGraph, label=lst:graph-struct, language=Python]
+class PrereqGraph:
+    def __init__(self) -> None:
+        self.courses: Dict[str, Course] = {}
+        self.prerequisites: Dict[str, Set[str]] = {}
+        self.dependents: Dict[str, Set[str]] = {}
+        self.co_requisites: Dict[str, Set[str]] = {}
+\end{lstlisting}
+
+\section{Detección de Ciclos (DFS con Pila)}
+
+El algoritmo de detección de ciclos utiliza una variante de DFS con seguimiento de la pila de recursión actual:
+
+\begin{lstlisting}[caption=Detección de ciclos en el DAG, label=lst:cycle-detection, language=Python]
+def detect_cycle(self) -> bool:
+    visited = set()
+    stack = set()
+
+    def visit(node: str) -> bool:
+        if node in stack:
+            return True
+        if node in visited:
+            return False
+        visited.add(node)
+        stack.add(node)
+        for prereq in self.prerequisites.get(node, set()):
+            if visit(prereq):
+                return True
+        stack.remove(node)
+        return False
+
+    return any(visit(node) for node in self.courses)
+\end{lstlisting}
+
+\section{Edición Interactiva en Caliente (Fase 1)}
+
+El editor interactivo expone formularios que modifican el grafo en tiempo real. El siguiente fragmento muestra el proceso de agregar un curso:
+
+\begin{lstlisting}[caption=Agregar curso desde el editor interactivo, label=lst:add-course-editor, language=Python]
+def _add_course_to_graph(
+    graph, code, name, credits, semester, area, semester_offered
+):
+    if not code:
+        st.error("El codigo del curso no puede estar vacio.")
+        return
+    if code in graph.courses:
+        st.error(f"El curso {code} ya existe en el grafo.")
+        return
+
+    course = Course(
+        code=code,
+        name=name,
+        credits=credits,
+        semester=semester,
+        area=area,
+        semester_offered=semester_offered,
+    )
+    graph.add_course(course)
+    st.success(f"Curso {code} -- {name} agregado correctamente.")
+    st.rerun()
+\end{lstlisting}
+
+La edición de prerrequisitos utiliza la validación integrada del grafo para evitar inconsistencias:
+
+\begin{lstlisting}[caption=Agregar prerrequisito desde la interfaz, label=lst:add-prereq, language=Python]
+def _render_add_prerequisite_dialog(graph, course_code):
+    existing = graph.get_prerequisites(course_code)
+    candidates = sorted(
+        c for c in graph.courses
+        if c != course_code and c not in existing
+    )
+    if not candidates:
+        st.info("No hay cursos disponibles.")
+        return
+
+    prereq_code = st.selectbox(
+        "Seleccionar prerrequisito",
+        candidates,
+        key=f"add_prereq_{course_code}",
+    )
+    if st.button("Confirmar prerrequisito"):
+        try:
+            graph.add_prerequisite(course_code, prereq_code)
+            st.success("Prerrequisito agregado.")
+            st.rerun()
+        except (ValueError, KeyError) as exc:
+            st.error(str(exc))
+\end{lstlisting}
+
+\section{Carga Dinámica Drag \& Drop (Fase 2)}
+
+El módulo de carga procesa archivos utilizando el componente nativo de Streamlit:
+
+\begin{lstlisting}[caption=Procesamiento de archivos JSON subidos, label=lst:drag-drop, language=Python]
+def render_file_uploader() -> Optional[PrereqGraph]:
+    uploaded_file = st.file_uploader(
+        "Seleccionar archivo",
+        type=["json"],
+        accept_multiple_files=False,
+        label_visibility="collapsed",
+    )
+    if uploaded_file is None:
+        return None
+
+    content = uploaded_file.read()
+    if len(content) == 0:
+        st.error("El archivo esta vacio.")
+        return None
+
+    try:
+        data = json.loads(content.decode("utf-8"))
+        if "courses" not in data:
+            raise ValueError(
+                "El JSON no contiene la clave 'courses'."
+            )
+        graph = PrereqGraph.from_dict(data)
+
+        if graph.detect_cycle():
+            st.warning("El grafo contiene ciclos.")
+
+        return graph
+    except json.JSONDecodeError as exc:
+        st.error(f"Error de formato JSON: {exc}")
+        return None
+\end{lstlisting}
+
+\section{Gestor de Electivas y Seguimiento Multi-periodo (Fase 3)}
+
+La clase \texttt{ProgressTracker} implementa el seguimiento del progreso académico. A continuación se muestra el método de simulación what-if:
+
+\begin{lstlisting}[caption=Simulador what-if de progreso académico, label:lst:simulator, language=Python]
+def simulate_semester(self, course_codes, semester=None):
+    simulated_completed = set(self.record.completed_courses)
+    simulated_credits = self.record.total_credits
+
+    for code in course_codes:
+        code = code.strip().upper()
+        if code not in simulated_completed and code in self.graph.courses:
+            simulated_completed.add(code)
+            simulated_credits += self.graph.courses[code].credits
+
+    next_sem = semester or (self.record.current_semester + 1)
+    eligible = self.graph.eligible_courses(
+        completed=simulated_completed,
+        semester=next_sem,
+        completed_credits=simulated_credits,
+    )
+
+    return {
+        "semestre_simulado": next_sem,
+        "creditos_simulados": simulated_credits,
+        "cursos_elegibles": [c.code for c in eligible],
+        "nuevos_aprobados": course_codes,
+    }
+\end{lstlisting}
+
+\section{Refactorización a Módulos de Interfaz y Utilidades Compartidas}
+
+En una etapa posterior de desarrollo, se refactorizó \texttt{main.py} extrayendo cada modo de operación a su propio módulo dentro de \texttt{prereqflow/modes/}. Esta separación de responsabilidades mejora la mantenibilidad y legibilidad del código:
+
+\begin{itemize}
+    \item \texttt{prereqflow/modes/planner\_ui.py} — Contiene \texttt{render\_planner\_mode()}, que integra la visualización del grafo, la configuración del plan y la consulta de información de cursos.
+    \item \texttt{prereqflow/modes/editor\_ui.py} — Contiene \texttt{render\_editor\_mode()}, que envuelve al editor de cursos con un botón de guardado a JSON.
+    \item \texttt{prereqflow/modes/uploader\_ui.py} — Contiene \texttt{render\_uploader\_mode()}, que muestra las instrucciones y la guía de formato JSON antes de delegar en el cargador.
+    \item \texttt{prereqflow/modes/tracker\_ui.py} — Contiene \texttt{render\_tracker\_mode()}, que organiza las pestañas de progreso, electivas y simulador.
+\end{itemize}
+
+Además, se creó \texttt{prereqflow/utils.py} con funciones auxiliares compartidas por toda la interfaz:
+
+\begin{itemize}
+    \item \texttt{course\_label(code, graph)} — Genera la etiqueta ``CÓDIGO — Nombre'' para cualquier curso.
+    \item \texttt{course\_select\_options(graph)} — Construye un diccionario código $\to$ etiqueta para usar como \texttt{format\_func} en \texttt{st.selectbox} y \texttt{st.multiselect}.
+\end{itemize}
+
+Esta unificación garantiza que todos los selectores de la aplicación muestren el mismo formato ``SIS018 — Estructura de Datos'', mejorando la experiencia de usuario y eliminando duplicación de código.
+
+\section{Generación de Currículos de Ejemplo}
+
+Para facilitar las pruebas y la demostración, se generaron 12 archivos JSON en el directorio \texttt{examples/}. Cada archivo representa un currículo universitario ficticio con diferentes niveles de complejidad: programas pequeños (15--20 cursos), medianos (40--50 cursos) y extensos (hasta 120 cursos). Todos los archivos incluyen prerrequisitos, corequisitos y, en algunos casos, grupos electivos y restricciones de oferta semestral. La carga y validación de cada archivo fue verificada con las pruebas automatizadas del cargador (8 pruebas específicas).
+
+La validación de grupos electivos se implementa en \texttt{ElectiveManager}:
+
+\begin{lstlisting}[caption=Validación de reglas de grupos electivos, label:lst:elective-validation, language=Python]
+def validate_selection(self, group_name, selected_codes):
+    errors = []
+    group = self.elective_groups.get(group_name)
+    if group is None:
+        errors.append(f"Grupo '{group_name}' no existe.")
+        return errors
+
+    invalid = selected_codes - group.course_codes
+    if invalid:
+        errors.append(f"Cursos {invalid} no pertenecen al grupo.")
+
+    if group.min_select and len(selected_codes) < group.min_select:
+        errors.append(
+            f"Debe seleccionar al menos {group.min_select} curso(s)."
+        )
+    if group.max_select and len(selected_codes) > group.max_select:
+        errors.append(
+            f"No puede seleccionar mas de {group.max_select} curso(s)."
+        )
+    if group.min_credits:
+        total = sum(
+            group.course_credits.get(c, 0) for c in selected_codes
+        )
+        if total < group.min_credits:
+            errors.append(
+                f"Debe completar al menos {group.min_credits} creditos."
+            )
+    return errors
+\end{lstlisting}
+
+%==============================================================================
+\chapter{Resultados y Pruebas}
+%==============================================================================
+
+\section{Pruebas Unitarias}
+
+El proyecto incluye 50 pruebas unitarias distribuidas en seis archivos, todas verificadas exitosamente:
+
+\begin{verbatim}
+$ pytest -v
+=========================================
+tests/test_graph.py                        PASSED  [ 8 tests]
+tests/test_planner.py                      PASSED  [ 9 tests]
+tests/test_io.py                           PASSED  [ 5 tests]
+tests/test_editor.py                       PASSED  [ 8 tests]
+tests/test_uploader.py                     PASSED  [ 8 tests]
+tests/test_tracker.py                      PASSED  [12 tests]
+-----------------------------------------
+50 passed in 1.12s
+=========================================
+\end{verbatim}
+
+\subsection{Pruebas del Grafo (8)}
+\begin{itemize}
+    \item \texttt{test\_graph\_cycle\_detection}: Ciclo A→B→A detectado correctamente.
+    \item \texttt{test\_topological\_sort\_simple}: Ordenamiento A, B para A→B.
+    \item \texttt{test\_prerequisite\_closure\_and\_depth}: Cierre transitivo y profundidad en cadena A→B→C.
+    \item Pruebas adicionales de búsqueda de cursos elegibles.
+\end{itemize}
+
+\subsection{Pruebas del Planificador (9)}
+\begin{itemize}
+    \item \texttt{test\_generate\_study\_plan\_order}: Orden correcto respetando prerrequisitos.
+    \item \texttt{test\_generate\_study\_plan\_with\_completed\_courses}: Cursos completados omitidos.
+    \item \texttt{test\_generate\_study\_plan\_with\_semester\_offered}: Disponibilidad semestral.
+    \item \texttt{test\_generate\_study\_plan\_with\_min\_completed\_credits}: Créditos mínimos.
+    \item \texttt{test\_generate\_study\_plan\_with\_co\_requisites}: Corequisitos en el mismo semestre.
+    \item \texttt{test\_generate\_study\_plan\_with\_mutual\_co\_reqs}: Corequisitos mutuos.
+    \item Pruebas de planificación rápida, bajo riesgo y con restricciones adicionales.
+\end{itemize}
+
+\subsection{Pruebas de E/S (5)}
+\begin{itemize}
+    \item \texttt{test\_save\_and\_load\_graph\_to\_json}: Serialización y deserialización JSON.
+    \item \texttt{test\_load\_utp\_curriculum\_json}: Carga del currículo real UTP.
+    \item \texttt{test\_save\_and\_load\_graph\_to\_csv}: Serialización y deserialización CSV.
+    \item Pruebas de manejo de errores y datos malformados.
+\end{itemize}
+
+\subsection{Pruebas del Editor (8)}
+\begin{itemize}
+    \item \texttt{test\_add\_course}: Adición de un curso nuevo.
+    \item \texttt{test\_edit\_course}: Modificación de atributos.
+    \item \texttt{test\_remove\_course}: Eliminación con limpieza de relaciones.
+    \item \texttt{test\_add\_prerequisite}: Validación de prerrequisitos.
+    \item \texttt{test\_add\_co\_requisite}: Validación de corequisitos.
+    \item Pruebas de detección de errores de entrada y consistencia interna.
+\end{itemize}
+
+\subsection{Pruebas del Cargador (8)}
+\begin{itemize}
+    \item \texttt{test\_upload\_valid\_json}: Carga de JSON válido.
+    \item \texttt{test\_upload\_invalid\_json}: Rechazo de JSON mal formado.
+    \item \texttt{test\_upload\_missing\_courses\_key}: Error si falta clave 'courses'.
+    \item \texttt{test\_upload\_empty\_file}: Error de archivo vacío.
+    \item \texttt{test\_upload\_cycle\_detection}: Advertencia en grafos cíclicos.
+    \item Pruebas de formato no soportado y carga de ejemplo real.
+\end{itemize}
+
+\subsection{Pruebas del Seguimiento (12)}
+\begin{itemize}
+    \item \texttt{test\_complete\_semester}: Registro de semestre completo.
+    \item \texttt{test\_progress\_summary}: Métricas correctas de avance.
+    \item \texttt{test\_simulate\_semester}: Simulación what-if básica.
+    \item \texttt{test\_simulate\_with\_prereqs}: Simulación respetando prerrequisitos.
+    \item \texttt{test\_elective\_group\_validation}: Reglas de grupos electivos.
+    \item \texttt{test\_elective\_select}: Selección y validación de electivas.
+    \item Pruebas de escenarios borde, dependencias y múltiples periodos.
+\end{itemize}
+
+\section{Rendimiento del Sistema}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrr}
+        \toprule
+        \textbf{Operación} & \textbf{Tiempo (ms)} & \textbf{Complejidad} \\
+        \midrule
+        Carga de JSON (64 cursos) & 12 & $O(V+E)$ \\
+        Detección de ciclos & 3 & $O(V+E)$ \\
+        Ordenamiento topológico & 4 & $O(V+E)$ \\
+        Planificación (balanceado) & 45 & $O(S\cdot V\cdot(V+E))$ \\
+        Cierre de prerrequisitos & 2 & $O(V+E)$ \\
+        Validación de electivas & 1 & $O(C)$ \\
+        Edición de curso & $<$1 & $O(1)$ \\
+        Carga Drag \& Drop (JSON) & 25 & $O(V+E)$ \\
+        Carga 12 ejemplos & 180 & $O(12\cdot(V+E))$ \\
+        course\_label (100 llamadas) & $<$1 & $O(1)$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Rendimiento del sistema con el currículo UTP.}
+    \label{tab:performance}
+\end{table}
+
+\section{Comportamiento en Tiempo Real}
+
+La edición interactiva demostró los siguientes comportamientos:
+\begin{itemize}
+    \item La adición de un curso nuevo se refleja en el grafo y el planificador en menos de 1 segundo.
+    \item La modificación de prerrequisitos actualiza inmediatamente el orden topológico y los cursos elegibles.
+    \item La eliminación de un curso limpia todas sus dependencias sin dejar relaciones huérfanas.
+    \item El Drag \& Drop de archivos JSON procesa currículos de hasta 200 cursos en menos de 50 ms.
+    \item Los 12 currículos de ejemplo se cargan y validan correctamente, cubriendo rangos de 15 a 120 cursos.
+    \item La función \texttt{course\_label()} unifica el formato de todos los selectores de la interfaz sin duplicación de código.
+\end{itemize}
+
+\section{Evaluación del Seguimiento Multi-periodo}
+
+El módulo de seguimiento fue evaluado con el currículo UTP completo:
+\begin{itemize}
+    \item El registro de 10 semestres se completa sin errores de prerrequisitos.
+    \item La simulación what-if permite explorar escenarios de doble titulación y rutas aceleradas.
+    \item El gestor de electivas valida correctamente las reglas de selección (mínimo 1 curso, máximo 2, mínimo 3 créditos).
+    \item El cálculo de porcentaje de avance es preciso y se actualiza con cada semestre registrado.
+\end{itemize}
+
+%==============================================================================
+\chapter{Conclusiones}
+%==============================================================================
+
+El desarrollo de PrereqFlow ha demostrado cómo la aplicación de estructuras de datos de grafos dirigidos, combinada con técnicas modernas de visualización web interactiva, puede transformar la gestión de planes de estudio universitarios. Las conclusiones más relevantes son:
+
+\begin{enumerate}
+    \item \textbf{Evolución de visor a plataforma completa.} El proyecto inició como un planificador académico básico con visualización de grafos y evolucionó hasta convertirse en una plataforma integral de gestión curricular. Las tres fases de desarrollo (edición interactiva, carga dinámica, seguimiento multi-periodo) transformaron cualitativamente la utilidad de la herramienta.
+
+    \item \textbf{Edición en caliente funcional y robusta.} La integración de formularios de edición que modifican el grafo en memoria y disparan re-renderizaciones automáticas demostró ser un enfoque efectivo. Las validaciones incorporadas (detección de autoprerrequisitos, existencia de cursos referenciados) previenen la corrupción del grafo.
+
+    \item \textbf{Carga dinámica con validación inteligente.} El sistema de Drag \& Drop procesa archivos JSON con detección automática de ciclos, guía de formato integrada y retroalimentación visual inmediata. La validación estructural garantiza que solo datos bien formados sean incorporados al sistema.
+
+    \item \textbf{Gestión de electivas flexible.} El modelo de grupos electivos con reglas configurables (mínimos, máximos, créditos) permite representar una amplia variedad de requisitos curriculares. La validación por separado de cada grupo facilita la depuración de las selecciones del estudiante.
+
+    \item \textbf{Seguimiento multi-periodo con simulación.} El registro de progreso semestre a semestre, combinado con el simulador what-if, proporciona al estudiante una herramienta poderosa para la planificación a largo plazo. La capacidad de explorar diferentes rutas sin modificar el registro real fomenta la toma de decisiones informada.
+
+    \item \textbf{Rendimiento adecuado para el dominio.} Todas las operaciones del sistema se ejecutan en tiempos sub-segundo para currículos de tamaño realista (64 cursos). Las complejidades algorítmicas $O(V+E)$ y $O(S \cdot V^2)$ son aceptables para el dominio académico.
+
+    \item \textbf{Arquitectura extensible.} El diseño modular del paquete \texttt{prereqflow/} permite agregar nuevas funcionalidades sin modificar los modulos existentes. Las nuevas fases se implementaron como modulos independientes (\texttt{editor.py}, \texttt{uploader.py}, \texttt{tracker.py}) y los componentes de interfaz se organizaron en \texttt{modes/}, con utilidades compartidas en \texttt{utils.py}.
+
+    \item \textbf{Integración pedagógica.} El proyecto integra conceptos fundamentales de Estructuras de Datos (grafos, DFS, ordenamiento topológico, complejidad algorítmica) en una aplicación real y tangible, demostrando la utilidad práctica de la teoría en la resolución de problemas auténticos.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+
+\bibitem{cormen2009}
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., \& Stein, C. (2009).
+\textit{Introduction to Algorithms} (3.ª ed.). MIT Press.
+
+\bibitem{knuth1997}
+Knuth, D. E. (1997).
+\textit{The Art of Computer Programming, Volume 1: Fundamental Algorithms} (3.ª ed.). Addison-Wesley.
+
+\bibitem{fruchterman1991}
+Fruchterman, T. M. J., \& Reingold, E. M. (1991).
+Graph drawing by force-directed placement.
+\textit{Software: Practice and Experience, 21}(11), 1129--1164.
+\url{https://doi.org/10.1002/spe.4380211102}
+
+\bibitem{tarjan1972}
+Tarjan, R. E. (1972).
+Depth-first search and linear graph algorithms.
+\textit{SIAM Journal on Computing, 1}(2), 146--160.
+\url{https://doi.org/10.1137/0201010}
+
+\bibitem{streamlit2023}
+Streamlit Inc. (2023).
+\textit{Streamlit: The fastest way to build data apps in Python}.
+\url{https://streamlit.io/}
+
+\bibitem{pyvis}
+Perrone, G. (2023).
+\textit{PyVis: Interactive graph visualizations}.
+\url{https://pyvis.readthedocs.io/}
+
+\bibitem{visnetwork}
+Vis.js Team. (2023).
+\textit{vis-network: Network visualization in the browser}.
+\url{https://visjs.org/}
+
+\bibitem{utp}
+Universidad Tecnológica de Pereira. (2024).
+\textit{Plan de estudios: Ingeniería de Sistemas y Computación}.
+\url{https://www.utp.edu.co/}
+
+\bibitem{barnes1986}
+Barnes, J., \& Hut, P. (1986).
+A hierarchical O(N log N) force-calculation algorithm.
+\textit{Nature, 324}(6096), 446--449.
+\url{https://doi.org/10.1038/324446a0}
+
+\end{thebibliography}
+
+%==============================================================================
+\chapter{Anexos}
+%==============================================================================
+
+\section{Manual de Usuario Completo}
+
+\subsection{Instalación}
+
+\begin{enumerate}
+    \item Clone el repositorio: \texttt{git clone https://github.com/1594-adrs/PrereqFlow}
+    \item Acceda al directorio: \texttt{cd PrereqFlow}
+    \item Instale las dependencias: \texttt{pip install -r requirements.txt}
+    \item Ejecute la aplicación: \texttt{streamlit run main.py}
+\end{enumerate}
+
+La aplicación se abrirá automáticamente en \texttt{http://localhost:8501}.
+
+\subsection{Modo Planificador}
+\begin{enumerate}
+    \item Seleccione la fuente de datos en la barra lateral.
+    \item Ajuste créditos máximos, semestres y tipo de plan.
+    \item Marque los cursos ya cursados para omitirlos.
+    \item Explore el grafo interactivo (zoom, paneo, arrastre).
+    \item Revise el plan de estudios generado semestre por semestre.
+    \item Seleccione cualquier curso para ver información detallada.
+\end{enumerate}
+
+\subsection{Modo Editor}
+\begin{enumerate}
+    \item Cambie a modo ``Editor de cursos'' en la barra lateral.
+    \item Use el formulario ``Agregar nuevo curso'' para añadir asignaturas.
+    \item Seleccione un curso existente para editar sus propiedades.
+    \item Use los controles de eliminación para remover cursos o relaciones.
+    \item Guarde los cambios a JSON si desea persistirlos.
+\end{enumerate}
+
+\subsection{Modo Carga}
+\begin{enumerate}
+    \item Cambie a modo ``Cargar archivo'' en la barra lateral.
+    \item Revise la guía de formato JSON esperado (expandir la sección de ayuda).
+    \item Arrastre un archivo .json al área de carga.
+    \item Espere la validación y el resumen de cursos cargados.
+    \item Cambie al modo Planificador para visualizar el nuevo currículo.
+\end{enumerate}
+
+\subsection{Modo Seguimiento}
+\begin{enumerate}
+    \item Cambie a modo ``Seguimiento''.
+    \item Revise las métricas de progreso (cursos, créditos, porcentaje).
+    \item Registre semestres completados con los cursos aprobados.
+    \item Explore las electivas disponibles y realice selecciones.
+    \item Use el simulador what-if para probar diferentes rutas.
+\end{enumerate}
+
+\section{Proyecto Open Source (Licencia MIT)}
+
+PrereqFlow es un proyecto de código abierto distribuido bajo la \textbf{licencia MIT}. El código fuente completo está disponible en el repositorio público:
+
+\begin{center}
+\url{https://github.com/1594-adrs/PrereqFlow}
+\end{center}
+
+La licencia MIT permite el uso, modificación y distribución del software, tanto en proyectos personales como comerciales, siempre que se incluya el aviso de copyright original.
+
+\section{Estructura del Repositorio}
+
+\begin{verbatim}
+PrereqFlow/
++-- main.py                        # Punto de entrada (Streamlit)
++-- prereqflow/                    # Paquete principal
+|   +-- __init__.py                # Exportaciones
+|   +-- __main__.py                # Ejecucion como modulo
+|   +-- models.py                  # Modelo Course
+|   +-- graph.py                   # PrereqGraph (DAG)
+|   +-- planner.py                 # SemesterPlanner
+|   +-- editor.py                  # Editor interactivo (Fase 1)
+|   +-- uploader.py                # Carga Drag & Drop (Fase 2)
+|   +-- tracker.py                 # Seguimiento + electivas (Fase 3)
+|   +-- visualization.py           # Renderizado PyVis
+|   +-- io.py                      # Persistencia JSON/CSV
+|   +-- utils.py                   # Utilidades de interfaz
+|   \-- modes/                     # Componentes UI por modo
+|       +-- planner_ui.py
+|       +-- editor_ui.py
+|       +-- uploader_ui.py
+|       \-- tracker_ui.py
++-- tests/                         # Pruebas unitarias (50 tests)
+|   +-- test_graph.py              (8 tests)
+|   +-- test_planner.py            (9 tests)
+|   +-- test_io.py                 (5 tests)
+|   +-- test_editor.py             (8 tests)
+|   +-- test_uploader.py           (8 tests)
+|   \-- test_tracker.py            (12 tests)
++-- data/
+|   +-- utp_sistemas.json          # Curriculo UTP
+|   \-- user_data.json             # Datos de usuario
++-- examples/                      # 12 curriculos JSON de ejemplo
++-- docs/                          # Documentacion tecnica
++-- lib/                           # Librerias frontend
++-- Trabajo escrito/               # Documento LaTeX
++-- pyproject.toml                 # Configuracion del proyecto
++-- requirements.txt               # Dependencias
+\-- README.md                      # Documentacion principal
+\end{verbatim}
+
+\section{Glosario de Términos}
+
+\begin{description}
+    \item[DAG:] Directed Acyclic Graph (Grafo Dirigido Acíclico).
+    \item[DFS:] Depth-First Search (Búsqueda en Profundidad).
+    \item[Prerrequisito:] Curso que debe ser aprobado antes de poder cursar otro.
+    \item[Corequisito:] Curso que debe cursarse simultáneamente con otro.
+    \item[Crédito:] Unidad de medida del trabajo académico universitario.
+    \item[Ordenamiento topológico:] Ordenación lineal de un DAG respetando la dirección de sus aristas.
+    \item[Cierre transitivo:] Conjunto de todos los prerrequisitos directos e indirectos de un curso.
+    \item[Electiva:] Curso de selección voluntaria dentro de un grupo definido.
+    \item[What-if:] Simulación de escenarios hipotéticos sin modificar datos reales.
+    \item[Force-directed drawing:] Técnica de visualización que simula fuerzas físicas para distribuir nodos.
+\end{description}
+
+\end{document}
